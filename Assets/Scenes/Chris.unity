@@ -393,43 +393,47 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   attackFX:
-    posOffset: {x: 0, y: 0, z: 0}
     ease:
       serializedVersion: 2
       m_Curve: []
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+    posOffset: {x: 0, y: 0, z: 0}
+    rotationOffset: {x: 0, y: 0, z: 0, w: 0}
     scaleFactor: 0
     targetColor: {r: 0, g: 0, b: 0, a: 0}
   sustainFX:
-    posOffset: {x: 0, y: 0, z: 0}
     ease:
       serializedVersion: 2
       m_Curve: []
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+    posOffset: {x: 0, y: 0, z: 0}
+    rotationOffset: {x: 0, y: 0, z: 0, w: 0}
     scaleFactor: 0
     targetColor: {r: 0, g: 0, b: 0, a: 0}
   successReleaseFX:
-    posOffset: {x: 0, y: 0, z: 0}
     ease:
       serializedVersion: 2
       m_Curve: []
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+    posOffset: {x: 0, y: 0, z: 0}
+    rotationOffset: {x: 0, y: 0, z: 0, w: 0}
     scaleFactor: 0
     targetColor: {r: 0, g: 0, b: 0, a: 0}
   failureReleaseFX:
-    posOffset: {x: 0, y: 0, z: 0}
     ease:
       serializedVersion: 2
       m_Curve: []
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+    posOffset: {x: 0, y: 0, z: 0}
+    rotationOffset: {x: 0, y: 0, z: 0, w: 0}
     scaleFactor: 0
     targetColor: {r: 0, g: 0, b: 0, a: 0}
   attackDuration: 1
@@ -523,7 +527,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   attackFX:
-    posOffset: {x: 0, y: 0, z: 0}
     ease:
       serializedVersion: 2
       m_Curve:
@@ -557,10 +560,11 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+    posOffset: {x: 0, y: 0, z: 0}
+    rotationOffset: {x: 0, y: 0, z: 0, w: 0}
     scaleFactor: 0.2
     targetColor: {r: 0.8773585, g: 0.774618, b: 0.086908154, a: 1}
   sustainFX:
-    posOffset: {x: 0, y: 0, z: 0}
     ease:
       serializedVersion: 2
       m_Curve:
@@ -594,10 +598,11 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+    posOffset: {x: 0, y: 0, z: 0}
+    rotationOffset: {x: 0, y: 0, z: 0, w: 0}
     scaleFactor: 1
     targetColor: {r: 0.9528302, g: 0.36306602, b: 0.1033731, a: 1}
   successReleaseFX:
-    posOffset: {x: 0, y: 0, z: 0}
     ease:
       serializedVersion: 2
       m_Curve:
@@ -622,10 +627,11 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+    posOffset: {x: 0, y: 0, z: 0}
+    rotationOffset: {x: 0, y: 0, z: 0, w: 0}
     scaleFactor: 1
     targetColor: {r: 0.32701433, g: 1, b: 0, a: 1}
   failureReleaseFX:
-    posOffset: {x: 0, y: 0, z: 0}
     ease:
       serializedVersion: 2
       m_Curve:
@@ -650,6 +656,8 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+    posOffset: {x: 0, y: 0, z: 0}
+    rotationOffset: {x: 0, y: 0, z: 0, w: 0}
     scaleFactor: 1
     targetColor: {r: 1, g: 0, b: 0, a: 1}
   attackDuration: 4
@@ -855,7 +863,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   attackFX:
-    posOffset: {x: 0, y: 0, z: 0}
     ease:
       serializedVersion: 2
       m_Curve:
@@ -889,10 +896,11 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+    posOffset: {x: 0, y: 0, z: 0}
+    rotationOffset: {x: 0, y: 0, z: 0, w: 0}
     scaleFactor: 0.2
     targetColor: {r: 0.8773585, g: 0.774618, b: 0.086908154, a: 1}
   sustainFX:
-    posOffset: {x: 0, y: 0, z: 0}
     ease:
       serializedVersion: 2
       m_Curve:
@@ -926,10 +934,11 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+    posOffset: {x: 0, y: 0, z: 0}
+    rotationOffset: {x: 0, y: 0, z: 0, w: 0}
     scaleFactor: 1
     targetColor: {r: 0.9528302, g: 0.36306602, b: 0.1033731, a: 1}
   successReleaseFX:
-    posOffset: {x: 0, y: 0, z: 0}
     ease:
       serializedVersion: 2
       m_Curve:
@@ -954,10 +963,11 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+    posOffset: {x: 0, y: 0, z: 0}
+    rotationOffset: {x: 0, y: 0, z: 0, w: 0}
     scaleFactor: 1
     targetColor: {r: 0.32701433, g: 1, b: 0, a: 1}
   failureReleaseFX:
-    posOffset: {x: 0, y: 0, z: 0}
     ease:
       serializedVersion: 2
       m_Curve:
@@ -982,6 +992,8 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+    posOffset: {x: 0, y: 0, z: 0}
+    rotationOffset: {x: 0, y: 0, z: 0, w: 0}
     scaleFactor: 1
     targetColor: {r: 1, g: 0, b: 0, a: 1}
   attackDuration: 4
@@ -1369,7 +1381,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   attackFX:
-    posOffset: {x: 0, y: 0, z: 0}
     ease:
       serializedVersion: 2
       m_Curve:
@@ -1403,10 +1414,11 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+    posOffset: {x: 0, y: 0, z: 0}
+    rotationOffset: {x: 0, y: 0, z: 0, w: 0}
     scaleFactor: 0.2
     targetColor: {r: 0.8773585, g: 0.774618, b: 0.086908154, a: 1}
   sustainFX:
-    posOffset: {x: 0, y: 0, z: 0}
     ease:
       serializedVersion: 2
       m_Curve:
@@ -1440,10 +1452,11 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+    posOffset: {x: 0, y: 0, z: 0}
+    rotationOffset: {x: 0, y: 0, z: 0, w: 0}
     scaleFactor: 1
     targetColor: {r: 0.9528302, g: 0.36306602, b: 0.1033731, a: 1}
   successReleaseFX:
-    posOffset: {x: 0, y: 0, z: 0}
     ease:
       serializedVersion: 2
       m_Curve:
@@ -1468,10 +1481,11 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+    posOffset: {x: 0, y: 0, z: 0}
+    rotationOffset: {x: 0, y: 0, z: 0, w: 0}
     scaleFactor: 1
     targetColor: {r: 0.32701433, g: 1, b: 0, a: 1}
   failureReleaseFX:
-    posOffset: {x: 0, y: 0, z: 0}
     ease:
       serializedVersion: 2
       m_Curve:
@@ -1496,6 +1510,8 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+    posOffset: {x: 0, y: 0, z: 0}
+    rotationOffset: {x: 0, y: 0, z: 0, w: 0}
     scaleFactor: 1
     targetColor: {r: 1, g: 0, b: 0, a: 1}
   attackDuration: 4
@@ -1786,6 +1802,58 @@ PrefabInstance:
     - target: {fileID: 5980759030916386000, guid: 4ad2a026ca5753b4e8eb0907d9889fc5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5980759030916386001, guid: 4ad2a026ca5753b4e8eb0907d9889fc5, type: 3}
+      propertyPath: attackFX.posOffset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5980759030916386001, guid: 4ad2a026ca5753b4e8eb0907d9889fc5, type: 3}
+      propertyPath: attackFX.posOffset.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5980759030916386001, guid: 4ad2a026ca5753b4e8eb0907d9889fc5, type: 3}
+      propertyPath: sustainFX.posOffset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5980759030916386001, guid: 4ad2a026ca5753b4e8eb0907d9889fc5, type: 3}
+      propertyPath: attackFX.rotationOffset.w
+      value: 0.9238795
+      objectReference: {fileID: 0}
+    - target: {fileID: 5980759030916386001, guid: 4ad2a026ca5753b4e8eb0907d9889fc5, type: 3}
+      propertyPath: attackFX.rotationOffset.y
+      value: 0.38268346
+      objectReference: {fileID: 0}
+    - target: {fileID: 5980759030916386001, guid: 4ad2a026ca5753b4e8eb0907d9889fc5, type: 3}
+      propertyPath: failureReleaseFX.posOffset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5980759030916386001, guid: 4ad2a026ca5753b4e8eb0907d9889fc5, type: 3}
+      propertyPath: failureReleaseFX.posOffset.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5980759030916386001, guid: 4ad2a026ca5753b4e8eb0907d9889fc5, type: 3}
+      propertyPath: successReleaseFX.posOffset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5980759030916386001, guid: 4ad2a026ca5753b4e8eb0907d9889fc5, type: 3}
+      propertyPath: successReleaseFX.posOffset.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5980759030916386001, guid: 4ad2a026ca5753b4e8eb0907d9889fc5, type: 3}
+      propertyPath: failureReleaseFX.rotationOffset.w
+      value: 0.9238795
+      objectReference: {fileID: 0}
+    - target: {fileID: 5980759030916386001, guid: 4ad2a026ca5753b4e8eb0907d9889fc5, type: 3}
+      propertyPath: failureReleaseFX.rotationOffset.y
+      value: -0.38268346
+      objectReference: {fileID: 0}
+    - target: {fileID: 5980759030916386001, guid: 4ad2a026ca5753b4e8eb0907d9889fc5, type: 3}
+      propertyPath: successReleaseFX.rotationOffset.w
+      value: 0.9238795
+      objectReference: {fileID: 0}
+    - target: {fileID: 5980759030916386001, guid: 4ad2a026ca5753b4e8eb0907d9889fc5, type: 3}
+      propertyPath: successReleaseFX.rotationOffset.y
+      value: -0.38268346
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ad2a026ca5753b4e8eb0907d9889fc5, type: 3}

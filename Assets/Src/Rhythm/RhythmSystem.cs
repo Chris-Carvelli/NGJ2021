@@ -91,7 +91,6 @@ namespace Src.Rhythm {
 				var channel = _channels[i];
 				var nextIndex = _channelIdxs[i];
 				var channelOffset = (channel[1] - channel[0]) * _channelLoops[i];
-				var pos = channel[nextIndex] + channelOffset;
 
 				notes[i].successful = press >= notes[i]._attackT && press <= notes[i]._sustainT;
 			}
