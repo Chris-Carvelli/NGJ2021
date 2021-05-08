@@ -123,6 +123,17 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &145396442 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3668297728367154148, guid: 539b38ca746298e4ab0b6ccabbadd8c5, type: 3}
+  m_PrefabInstance: {fileID: 2145273594}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 155eee39a03f47c4a9951dcb3df8eefe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &188863366
 GameObject:
   m_ObjectHideFlags: 0
@@ -574,7 +585,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1964409616344411209, guid: ea2c39fa8e0ab854cbff08ed875dec47, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 26.7
+      value: 3.2
       objectReference: {fileID: 0}
     - target: {fileID: 1964409616344411209, guid: ea2c39fa8e0ab854cbff08ed875dec47, type: 3}
       propertyPath: m_LocalPosition.y
@@ -582,7 +593,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1964409616344411209, guid: ea2c39fa8e0ab854cbff08ed875dec47, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.8
+      value: 3.8
       objectReference: {fileID: 0}
     - target: {fileID: 1964409616344411209, guid: ea2c39fa8e0ab854cbff08ed875dec47, type: 3}
       propertyPath: m_LocalRotation.w
@@ -634,7 +645,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1964409616344411212, guid: ea2c39fa8e0ab854cbff08ed875dec47, type: 3}
       propertyPath: rolloffCustomCurve.m_Curve.Array.data[1].time
-      value: 0.24226841
+      value: 0.28834233
       objectReference: {fileID: 0}
     - target: {fileID: 1964409616344411212, guid: ea2c39fa8e0ab854cbff08ed875dec47, type: 3}
       propertyPath: rolloffCustomCurve.m_Curve.Array.data[2].time
@@ -650,11 +661,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1964409616344411212, guid: ea2c39fa8e0ab854cbff08ed875dec47, type: 3}
       propertyPath: rolloffCustomCurve.m_Curve.Array.data[0].value
-      value: 0.8681488
+      value: 0.9637985
       objectReference: {fileID: 0}
     - target: {fileID: 1964409616344411212, guid: ea2c39fa8e0ab854cbff08ed875dec47, type: 3}
       propertyPath: rolloffCustomCurve.m_Curve.Array.data[1].value
-      value: 0.7347699
+      value: 0.8144818
       objectReference: {fileID: 0}
     - target: {fileID: 1964409616344411212, guid: ea2c39fa8e0ab854cbff08ed875dec47, type: 3}
       propertyPath: rolloffCustomCurve.m_Curve.Array.data[2].value
@@ -697,8 +708,16 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1964409616344411214, guid: ea2c39fa8e0ab854cbff08ed875dec47, type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[1].time
+      value: 0.3116654
+      objectReference: {fileID: 0}
+    - target: {fileID: 1964409616344411214, guid: ea2c39fa8e0ab854cbff08ed875dec47, type: 3}
       propertyPath: panLevelCustomCurve.m_Curve.Array.data[1].time
       value: 0.35805628
+      objectReference: {fileID: 0}
+    - target: {fileID: 1964409616344411214, guid: ea2c39fa8e0ab854cbff08ed875dec47, type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[1].value
+      value: 0.9163571
       objectReference: {fileID: 0}
     - target: {fileID: 1964409616344411214, guid: ea2c39fa8e0ab854cbff08ed875dec47, type: 3}
       propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
@@ -729,6 +748,10 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1964409616344411215, guid: ea2c39fa8e0ab854cbff08ed875dec47, type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[1].time
+      value: 0.3252152
+      objectReference: {fileID: 0}
+    - target: {fileID: 1964409616344411215, guid: ea2c39fa8e0ab854cbff08ed875dec47, type: 3}
       propertyPath: rolloffCustomCurve.m_Curve.Array.data[2].time
       value: 0.48398393
       objectReference: {fileID: 0}
@@ -747,6 +770,10 @@ PrefabInstance:
     - target: {fileID: 1964409616344411215, guid: ea2c39fa8e0ab854cbff08ed875dec47, type: 3}
       propertyPath: panLevelCustomCurve.m_Curve.Array.data[1].time
       value: 0.16879795
+      objectReference: {fileID: 0}
+    - target: {fileID: 1964409616344411215, guid: ea2c39fa8e0ab854cbff08ed875dec47, type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[1].value
+      value: 0.8804837
       objectReference: {fileID: 0}
     - target: {fileID: 1964409616344411215, guid: ea2c39fa8e0ab854cbff08ed875dec47, type: 3}
       propertyPath: rolloffCustomCurve.m_Curve.Array.data[2].value
@@ -868,8 +895,8 @@ AudioSource:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 0.2601746
-      value: 0.764906
+      time: 0.31708226
+      value: 0.9322949
       inSlope: -1.002004
       outSlope: -1.002004
       tangentMode: 0
@@ -1273,6 +1300,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5571288074077769294, guid: 975644c71e5db39499fa09067f5d02c1, type: 3}
+      propertyPath: stepDistance
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5571288074077769294, guid: 975644c71e5db39499fa09067f5d02c1, type: 3}
+      propertyPath: audioRandomizer
+      value: 
+      objectReference: {fileID: 145396442}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 975644c71e5db39499fa09067f5d02c1, type: 3}
 --- !u!1 &1081998007 stripped
@@ -2027,21 +2062,41 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3668297728367154148, guid: 539b38ca746298e4ab0b6ccabbadd8c5, type: 3}
+      propertyPath: volumeMax
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3668297728367154148, guid: 539b38ca746298e4ab0b6ccabbadd8c5, type: 3}
+      propertyPath: volumeMin
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3668297728367154148, guid: 539b38ca746298e4ab0b6ccabbadd8c5, type: 3}
       propertyPath: audioFiles.Array.size
-      value: 3
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3668297728367154148, guid: 539b38ca746298e4ab0b6ccabbadd8c5, type: 3}
       propertyPath: audioFiles.Array.data[0]
       value: 
-      objectReference: {fileID: 8300000, guid: 8d797c4823614234ba1a7b3fa95a2f66, type: 3}
+      objectReference: {fileID: 8300000, guid: 999f11fb1d7c467409a16466995ba9b0, type: 3}
     - target: {fileID: 3668297728367154148, guid: 539b38ca746298e4ab0b6ccabbadd8c5, type: 3}
       propertyPath: audioFiles.Array.data[1]
       value: 
-      objectReference: {fileID: 8300000, guid: a639070e7166fa442af7899ea91ddc5e, type: 3}
+      objectReference: {fileID: 8300000, guid: a44f5aa99d8ead748851aab954edc92c, type: 3}
     - target: {fileID: 3668297728367154148, guid: 539b38ca746298e4ab0b6ccabbadd8c5, type: 3}
       propertyPath: audioFiles.Array.data[2]
       value: 
-      objectReference: {fileID: 8300000, guid: cb484a842d35bf848b52abd30713169f, type: 3}
+      objectReference: {fileID: 8300000, guid: 54737328059528041b2fbeec3e8d3d83, type: 3}
+    - target: {fileID: 3668297728367154148, guid: 539b38ca746298e4ab0b6ccabbadd8c5, type: 3}
+      propertyPath: audioFiles.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: 46a2593542dd9424db0fa2e905a79875, type: 3}
+    - target: {fileID: 3668297728367154148, guid: 539b38ca746298e4ab0b6ccabbadd8c5, type: 3}
+      propertyPath: audioFiles.Array.data[4]
+      value: 
+      objectReference: {fileID: 8300000, guid: 729cef5f3bfd4bf4289bbf80cb9f84f0, type: 3}
+    - target: {fileID: 3668297728367154148, guid: 539b38ca746298e4ab0b6ccabbadd8c5, type: 3}
+      propertyPath: audioFiles.Array.data[5]
+      value: 
+      objectReference: {fileID: 8300000, guid: 13a821633b24d6646bf58e12fe666970, type: 3}
     - target: {fileID: 3668297728367154149, guid: 539b38ca746298e4ab0b6ccabbadd8c5, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -2088,15 +2143,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3668297728367154151, guid: 539b38ca746298e4ab0b6ccabbadd8c5, type: 3}
       propertyPath: m_Volume
-      value: 0.25
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 3668297728367154151, guid: 539b38ca746298e4ab0b6ccabbadd8c5, type: 3}
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 3668297728367154151, guid: 539b38ca746298e4ab0b6ccabbadd8c5, type: 3}
+      propertyPath: BypassReverbZones
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3668297728367154170, guid: 539b38ca746298e4ab0b6ccabbadd8c5, type: 3}
       propertyPath: m_Name
       value: FootstepAudioRand
+      objectReference: {fileID: 0}
+    - target: {fileID: 3668297728367154170, guid: 539b38ca746298e4ab0b6ccabbadd8c5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 539b38ca746298e4ab0b6ccabbadd8c5, type: 3}
