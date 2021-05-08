@@ -23,6 +23,9 @@ public class Movement : MonoBehaviour
     public BasicRandomizer audioRandomizer;
     public float stepDistance;
 
+    [Header("Trigger")]
+    public bool BlockPlayerOnTrigger = false;
+
     CharacterController characterController;
     Vector3 moveDirection = Vector3.zero;
     float rotationX = 0;
@@ -110,13 +113,15 @@ public class Movement : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
 
-       
-            //cameraStartPosition = playerCamera.transform.position;
-            //cameraEndPosition = playerCamera.transform.position + new Vector3(-2.82f, 0.49f, -1.13f);
-            //cameraEndPosition = playerCamera.transform.position + new Vector3(-10f,10f, -10f);
-        
+
+        //cameraStartPosition = playerCamera.transform.position;
+        //cameraEndPosition = playerCamera.transform.position + new Vector3(-2.82f, 0.49f, -1.13f);
+        //cameraEndPosition = playerCamera.transform.position + new Vector3(-10f,10f, -10f);
+
         //inTrigger = true;
-        //canMove = false;
+
+        if(BlockPlayerOnTrigger)
+            canMove = false;
 
         
 
