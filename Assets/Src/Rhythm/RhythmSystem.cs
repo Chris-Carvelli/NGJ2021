@@ -21,7 +21,7 @@ namespace Src.Rhythm {
 
 		//keep all the position-in-beats of notes in the song
 		private float[][] _channels = new [] {
-			new [] { 0f, 4 },
+			new [] { 0f, 8 },
 			new [] { 2f, 14 },
 			new [] { 2f, 10 },
 			new [] { 4f, 20 },
@@ -93,7 +93,7 @@ namespace Src.Rhythm {
 				var channelOffset = (channel[1] - channel[0]) * _channelLoops[i];
 				var pos = channel[nextIndex] + channelOffset;
 
-				notes[i].successful = press >= notes[i]._sustainT && press <= notes[i]._releaseT;
+				notes[i].successful = press >= notes[i]._attackT && press <= notes[i]._sustainT;
 			}
 		}
 

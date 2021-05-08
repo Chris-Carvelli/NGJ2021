@@ -51,6 +51,7 @@ namespace Src.Rhythm {
 		}
 
 		private void Update() {
+			sysTime = _rhythmSystem.Time;
 			attackTime = (attackDuration - (_attackT - _rhythmSystem.Time)) / attackDuration;
 			sustainTime = (sustainDuration - (_sustainT - _rhythmSystem.Time)) / sustainDuration;
 			releaseTime = (releaseDuration - (_releaseT - _rhythmSystem.Time)) / releaseDuration;
@@ -59,8 +60,8 @@ namespace Src.Rhythm {
 			SO_NoteFXSection fx = attackFX;
 			Vector3 aPos = _startPos;
 			Vector3 aScale = _startScale;
-			Quaternion aRot;
-			Color aColor;
+			Quaternion aRot = _startRot;
+			Color aColor = _startColor;
 			if (attackTime < 1) {
 				t = attackTime;
 				state = State.Attack;
@@ -88,12 +89,14 @@ namespace Src.Rhythm {
 				t = 1;
 				state = State.Off;
 				fx = successReleaseFX;
-				aScale = _startScale;
-				aColor = _startColor;
+				transform.localScale = _startScale;
+				_renderer.color = _startColor;
 			}
 
-			transform.localScale = fx.GetScale(_startScale, aScale, t);
-			_renderer.color = fx.GetColor(aColor, t);
+			if (state != State.Off) {
+				transform.localScale = fx.GetScale(_startScale, aScale, t);
+				_renderer.color = fx.GetColor(aColor, t);
+			}
 		}
 
 		public void Impulse(float pT) {
