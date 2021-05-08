@@ -1,18 +1,27 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Sound.BasicRandomizer;
 
 public class Movement : MonoBehaviour
 {
+
+
+    [Header("Movement")]
     public float walkingSpeed = 7.5f;
     public float runningSpeed = 11.5f;
     public float jumpSpeed = 8.0f;
     public float gravity = 20.0f;
+
+    [Header("Camera")]
     public Camera playerCamera;
     public float lookSpeed = 2.0f;
     public float lookXLimit = 45.0f;
     public float transitionSpeed = 0.5f;
 
+    [Header("Step sound")]
+    public BasicRandomizer audioRandomizer;
+    public float stepDistance;
 
     CharacterController characterController;
     Vector3 moveDirection = Vector3.zero;
@@ -25,7 +34,7 @@ public class Movement : MonoBehaviour
     private Vector3 cameraOffset;
     private Vector3 cameraStartPosition;
     private Vector3 cameraEndPosition;
-
+    private float accumulatedDistance;
 
     void Start()
     {
@@ -34,7 +43,7 @@ public class Movement : MonoBehaviour
         // Lock cursor
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-
+        accumulatedDistance = 0f;
 
 
         cameraOffset = characterController.transform.position - playerCamera.transform.position;
@@ -71,6 +80,19 @@ public class Movement : MonoBehaviour
 
         // Move the controller
         characterController.Move(moveDirection * Time.deltaTime);
+
+
+        if(characterController.velocity.sqrMagnitude > 0)
+        {
+            accumulatedDistance += Time.deltaTime;
+
+            if (accumulatedDistance > stepDistance)
+            {
+                BasicRandomizer.Trigger(audioRandomizer);
+                accumulatedDistance = 0f;
+            }
+
+        }
 
         // Player and Camera rotation
         if (canMove)
