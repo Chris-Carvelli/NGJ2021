@@ -52,6 +52,20 @@ AudioMixerEffectController:
   m_SendTarget: {fileID: 0}
   m_EnableWetMix: 0
   m_Bypass: 0
+--- !u!244 &-2870910260530662008
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: 09042ecf130332c4c8f42bfa55b70b23
+  m_EffectName: Attenuation
+  m_MixLevel: dff4156bf5f1d7342920a934bd08a975
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
 --- !u!241 &24100000
 AudioMixerController:
   m_ObjectHideFlags: 0
@@ -75,6 +89,7 @@ AudioMixerController:
     - e66685193311f7742b7867b751a6f8ca
     - 6d6a28b2da457064ab6e8807be77f928
     - 38ca6df674129734b9568caf99ad23d9
+    - a4b83bb841132f04981433b968b36fdf
     name: View
   m_CurrentViewIndex: 0
   m_TargetSnapshot: {fileID: 24500006}
@@ -90,6 +105,7 @@ AudioMixerGroupController:
   m_Children:
   - {fileID: -7214165243676177812}
   - {fileID: 38203408549732401}
+  - {fileID: 5081153124606060269}
   - {fileID: -9132421054066940059}
   - {fileID: 2716604472866725634}
   m_Volume: af367ae9914b41a4f9ca0a46d6748713
@@ -125,10 +141,11 @@ AudioMixerSnapshotController:
   m_AudioMixer: {fileID: 24100000}
   m_SnapshotID: 0e5700bd2cd7e9d4bb045e9e7965cd6e
   m_FloatValues:
-    80063dd5254a6d24bacad6453a9f07e9: 20
-    af367ae9914b41a4f9ca0a46d6748713: 0.23288241
-    0ac0a1acedb1c2d42a8b20f9fea1e2e9: 20
-    531b223d527180849ae271f1ca6b1819: 20
+    727f3c61d6fab4d46bc2505311539dae: 10.610256
+    80063dd5254a6d24bacad6453a9f07e9: 13.341328
+    af367ae9914b41a4f9ca0a46d6748713: 3.5924087
+    0ac0a1acedb1c2d42a8b20f9fea1e2e9: 9.097025
+    531b223d527180849ae271f1ca6b1819: 11.135805
   m_TransitionOverrides: {}
 --- !u!243 &38203408549732401
 AudioMixerGroupController:
@@ -196,6 +213,25 @@ AudioMixerEffectController:
   m_SendTarget: {fileID: 0}
   m_EnableWetMix: 0
   m_Bypass: 0
+--- !u!243 &5081153124606060269
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Train
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: a4b83bb841132f04981433b968b36fdf
+  m_Children: []
+  m_Volume: 727f3c61d6fab4d46bc2505311539dae
+  m_Pitch: 2142e7ae85375c641a4a5f91ec960c20
+  m_Send: 00000000000000000000000000000000
+  m_Effects:
+  - {fileID: -2870910260530662008}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
 --- !u!244 &8059744305031147012
 AudioMixerEffectController:
   m_ObjectHideFlags: 3
