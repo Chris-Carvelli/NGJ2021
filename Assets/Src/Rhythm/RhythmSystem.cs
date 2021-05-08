@@ -17,11 +17,11 @@ namespace Src.Rhythm {
 		public float beatsShownInAdvance;
 
 		public NoteVisuals[] notes;
+		public MinigameController controller;
 
 		//keep all the position-in-beats of notes in the song
 		private float[][] _channels = new [] {
-			new [] { 0, 4f },
-			new [] { 0f, 8f },
+			new [] { 0f, 4 },
 			new [] { 2f, 14 },
 			new [] { 2f, 10 },
 			new [] { 4f, 20 },
@@ -79,8 +79,21 @@ namespace Src.Rhythm {
 				Init();
 			
 			if (_playing) {
+				HandleInputs();
 				UpdateSongState();
 				Spawn();
+			}
+		}
+
+		private void HandleInputs() {
+			for (var i = 0; i < controller.lastInputPresses.Length; i++) {
+				var press = controller.lastInputPresses[i];
+				var channel = _channels[i];
+				var nextIndex = _channelIdxs[i];
+				var channelOffset = (channel[1] - channel[0]) * _channelLoops[i];
+				var pos = channel[nextIndex] + channelOffset;
+
+				notes[i].successful = press >= notes[i]._sustainT && press <= notes[i]._releaseT;
 			}
 		}
 

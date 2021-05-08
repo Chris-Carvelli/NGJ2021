@@ -13,7 +13,8 @@ namespace Src.Rhythm {
 
 		public SO_NoteFXSection attackFX;
 		public SO_NoteFXSection sustainFX;
-		public SO_NoteFXSection releaseFX;
+		public SO_NoteFXSection successReleaseFX;
+		public SO_NoteFXSection failureReleaseFX;
 		private Vector3 _startPos;
 		private Quaternion _startRot;
 		private Vector3 _startScale;
@@ -32,6 +33,8 @@ namespace Src.Rhythm {
 		public float _sustainT;
 		public float _releaseT;
 		public float sysTime;
+
+		public bool successful;
 
 		private RhythmSystem _rhythmSystem;
 		private SpriteRenderer _renderer;
@@ -77,14 +80,14 @@ namespace Src.Rhythm {
 			else if (releaseTime < 1) {
 				t = releaseTime;
 				state = State.Release;
-				fx = releaseFX;
+				fx = successful ?  successReleaseFX : failureReleaseFX;
 				aScale = _startScale * sustainFX.scaleFactor;
 				aColor = sustainFX.targetColor;
 			}
 			else {
 				t = 1;
 				state = State.Off;
-				fx = releaseFX;
+				fx = successReleaseFX;
 				aScale = _startScale;
 				aColor = _startColor;
 			}
@@ -92,10 +95,6 @@ namespace Src.Rhythm {
 			transform.localScale = fx.GetScale(_startScale, aScale, t);
 			_renderer.color = fx.GetColor(aColor, t);
 		}
-
-		public void Spawn() { }
-		
-		public void Despawn() { }
 
 		public void Impulse(float pT) {
 			print($"impulse {name}");
