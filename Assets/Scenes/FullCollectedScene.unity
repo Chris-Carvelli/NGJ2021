@@ -23903,6 +23903,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 188863367}
     m_Modifications:
+    - target: {fileID: 8437608758582856840, guid: 694eefe971370414a98b53181db7c1d2, type: 3}
+      propertyPath: maxDelayTime
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 8437608758582856840, guid: 694eefe971370414a98b53181db7c1d2, type: 3}
+      propertyPath: minDelayTime
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 8437608758582856845, guid: 694eefe971370414a98b53181db7c1d2, type: 3}
       propertyPath: m_Name
       value: Train Randomization
