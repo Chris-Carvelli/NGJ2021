@@ -51,6 +51,7 @@ namespace Src.Rhythm {
 		}
 
 		private void Update() {
+			sysTime = _rhythmSystem.Time;
 			attackTime = (attackDuration - (_attackT - _rhythmSystem.Time)) / attackDuration;
 			sustainTime = (sustainDuration - (_sustainT - _rhythmSystem.Time)) / sustainDuration;
 			releaseTime = (releaseDuration - (_releaseT - _rhythmSystem.Time)) / releaseDuration;
@@ -59,8 +60,8 @@ namespace Src.Rhythm {
 			SO_NoteFXSection fx = attackFX;
 			Vector3 aPos = _startPos;
 			Vector3 aScale = _startScale;
-			Quaternion aRot;
-			Color aColor;
+			Quaternion aRot = _startRot;
+			Color aColor = _startColor;
 			if (attackTime < 1) {
 				t = attackTime;
 				state = State.Attack;
@@ -74,6 +75,8 @@ namespace Src.Rhythm {
 				t = sustainTime;
 				state = State.Sustain;
 				fx = sustainFX;
+				aPos = _startPos + attackFX.posOffset;
+				aRot = _startRot * attackFX.rotationOffset;
 				aScale = _startScale * attackFX.scaleFactor;
 				aColor = attackFX.targetColor;
 			}
@@ -81,6 +84,8 @@ namespace Src.Rhythm {
 				t = releaseTime;
 				state = State.Release;
 				fx = successful ?  successReleaseFX : failureReleaseFX;
+				aPos = _startPos + attackFX.posOffset + sustainFX.posOffset;
+				aRot = _startRot * sustainFX.rotationOffset;
 				aScale = _startScale * sustainFX.scaleFactor;
 				aColor = sustainFX.targetColor;
 			}
@@ -88,12 +93,18 @@ namespace Src.Rhythm {
 				t = 1;
 				state = State.Off;
 				fx = successReleaseFX;
-				aScale = _startScale;
-				aColor = _startColor;
+				transform.localPosition = _startPos;
+				transform.localRotation = _startRot;
+				transform.localScale = _startScale;
+				_renderer.color = _startColor;
 			}
 
-			transform.localScale = fx.GetScale(_startScale, aScale, t);
-			_renderer.color = fx.GetColor(aColor, t);
+			if (state != State.Off) {
+				transform.localPosition = fx.GetPos(aPos, t);
+				transform.localRotation = fx.GetRot(_startRot, aRot, t);
+				transform.localScale = fx.GetScale(_startScale, aScale, t);
+				_renderer.color = fx.GetColor(aColor, t);
+			}
 		}
 
 		public void Impulse(float pT) {

@@ -5,18 +5,17 @@ namespace Src.Rhythm {
 	
 	[Serializable]
 	public struct SO_NoteFXSection {
-		public Vector3 posOffset;
 		public AnimationCurve ease;
-		// public float rotFactor;
-		// public AnimationCurve rotEase;
+		public Vector3 posOffset;
+		public Quaternion rotationOffset;
 		public float scaleFactor;
 		public Color targetColor;
 
 		public Vector3 GetPos(Vector3 startPos, float t) =>
 			Vector3.Lerp(startPos, startPos + posOffset, ease.Evaluate(t));
 		
-		// public Vector3 GetRot(Quaternion startPos, float t) =>
-		// 	Quaternion.Lerp(startPos, startPos * posFactor, t);
+		public Quaternion GetRot(Quaternion startPos, Quaternion aRot, float t) =>
+			Quaternion.Lerp(startPos, aRot * rotationOffset, t);
 		
 		public Vector3 GetScale(Vector3 startScale, Vector3 aScale, float t) =>
 			Vector3.Lerp(aScale, startScale * scaleFactor, ease.Evaluate(t));

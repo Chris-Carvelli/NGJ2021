@@ -393,43 +393,47 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   attackFX:
-    posOffset: {x: 0, y: 0, z: 0}
     ease:
       serializedVersion: 2
       m_Curve: []
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+    posOffset: {x: 0, y: 0, z: 0}
+    rotationOffset: {x: 0, y: 0, z: 0, w: 0}
     scaleFactor: 0
     targetColor: {r: 0, g: 0, b: 0, a: 0}
   sustainFX:
-    posOffset: {x: 0, y: 0, z: 0}
     ease:
       serializedVersion: 2
       m_Curve: []
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+    posOffset: {x: 0, y: 0, z: 0}
+    rotationOffset: {x: 0, y: 0, z: 0, w: 0}
     scaleFactor: 0
     targetColor: {r: 0, g: 0, b: 0, a: 0}
   successReleaseFX:
-    posOffset: {x: 0, y: 0, z: 0}
     ease:
       serializedVersion: 2
       m_Curve: []
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+    posOffset: {x: 0, y: 0, z: 0}
+    rotationOffset: {x: 0, y: 0, z: 0, w: 0}
     scaleFactor: 0
     targetColor: {r: 0, g: 0, b: 0, a: 0}
   failureReleaseFX:
-    posOffset: {x: 0, y: 0, z: 0}
     ease:
       serializedVersion: 2
       m_Curve: []
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+    posOffset: {x: 0, y: 0, z: 0}
+    rotationOffset: {x: 0, y: 0, z: 0, w: 0}
     scaleFactor: 0
     targetColor: {r: 0, g: 0, b: 0, a: 0}
   attackDuration: 1
@@ -451,7 +455,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 677279182}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -19.242928, y: 19.169216, z: -77.815414}
+  m_LocalPosition: {x: -19.242928, y: 19.169216, z: 0}
   m_LocalScale: {x: 30, y: 30, z: 30}
   m_Children: []
   m_Father: {fileID: 1675626564}
@@ -523,7 +527,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   attackFX:
-    posOffset: {x: 0, y: 0, z: 0}
     ease:
       serializedVersion: 2
       m_Curve:
@@ -557,10 +560,11 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+    posOffset: {x: 0, y: 0, z: 0}
+    rotationOffset: {x: 0, y: 0, z: 0, w: 0}
     scaleFactor: 0.2
     targetColor: {r: 0.8773585, g: 0.774618, b: 0.086908154, a: 1}
   sustainFX:
-    posOffset: {x: 0, y: 0, z: 0}
     ease:
       serializedVersion: 2
       m_Curve:
@@ -594,10 +598,11 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+    posOffset: {x: 0, y: 0, z: 0}
+    rotationOffset: {x: 0, y: 0, z: 0, w: 0}
     scaleFactor: 1
     targetColor: {r: 0.9528302, g: 0.36306602, b: 0.1033731, a: 1}
   successReleaseFX:
-    posOffset: {x: 0, y: 0, z: 0}
     ease:
       serializedVersion: 2
       m_Curve:
@@ -622,10 +627,11 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+    posOffset: {x: 0, y: 0, z: 0}
+    rotationOffset: {x: 0, y: 0, z: 0, w: 0}
     scaleFactor: 1
     targetColor: {r: 0.32701433, g: 1, b: 0, a: 1}
   failureReleaseFX:
-    posOffset: {x: 0, y: 0, z: 0}
     ease:
       serializedVersion: 2
       m_Curve:
@@ -650,6 +656,8 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+    posOffset: {x: 0, y: 0, z: 0}
+    rotationOffset: {x: 0, y: 0, z: 0, w: 0}
     scaleFactor: 1
     targetColor: {r: 1, g: 0, b: 0, a: 1}
   attackDuration: 4
@@ -722,7 +730,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 921730143}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -14.242928, y: 20.169216, z: -77.815414}
+  m_LocalPosition: {x: 5, y: 0, z: 0}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 1675626564}
@@ -855,7 +863,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   attackFX:
-    posOffset: {x: 0, y: 0, z: 0}
     ease:
       serializedVersion: 2
       m_Curve:
@@ -889,10 +896,11 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+    posOffset: {x: 0, y: 0, z: 0}
+    rotationOffset: {x: 0, y: 0, z: 0, w: 0}
     scaleFactor: 0.2
     targetColor: {r: 0.8773585, g: 0.774618, b: 0.086908154, a: 1}
   sustainFX:
-    posOffset: {x: 0, y: 0, z: 0}
     ease:
       serializedVersion: 2
       m_Curve:
@@ -926,10 +934,11 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+    posOffset: {x: 0, y: 0, z: 0}
+    rotationOffset: {x: 0, y: 0, z: 0, w: 0}
     scaleFactor: 1
     targetColor: {r: 0.9528302, g: 0.36306602, b: 0.1033731, a: 1}
   successReleaseFX:
-    posOffset: {x: 0, y: 0, z: 0}
     ease:
       serializedVersion: 2
       m_Curve:
@@ -954,10 +963,11 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+    posOffset: {x: 0, y: 0, z: 0}
+    rotationOffset: {x: 0, y: 0, z: 0, w: 0}
     scaleFactor: 1
     targetColor: {r: 0.32701433, g: 1, b: 0, a: 1}
   failureReleaseFX:
-    posOffset: {x: 0, y: 0, z: 0}
     ease:
       serializedVersion: 2
       m_Curve:
@@ -982,6 +992,8 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+    posOffset: {x: 0, y: 0, z: 0}
+    rotationOffset: {x: 0, y: 0, z: 0, w: 0}
     scaleFactor: 1
     targetColor: {r: 1, g: 0, b: 0, a: 1}
   attackDuration: 4
@@ -1054,7 +1066,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1389172822}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -19.242928, y: 17.169216, z: -77.815414}
+  m_LocalPosition: {x: 0, y: 5, z: 0}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 1675626564}
@@ -1230,7 +1242,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1675626563}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 19.242928, y: -19.169216, z: 77.815414}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 677279185}
@@ -1369,7 +1381,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   attackFX:
-    posOffset: {x: 0, y: 0, z: 0}
     ease:
       serializedVersion: 2
       m_Curve:
@@ -1403,10 +1414,11 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+    posOffset: {x: 0, y: 0, z: 0}
+    rotationOffset: {x: 0, y: 0, z: 0, w: 0}
     scaleFactor: 0.2
     targetColor: {r: 0.8773585, g: 0.774618, b: 0.086908154, a: 1}
   sustainFX:
-    posOffset: {x: 0, y: 0, z: 0}
     ease:
       serializedVersion: 2
       m_Curve:
@@ -1440,10 +1452,11 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+    posOffset: {x: 0, y: 0, z: 0}
+    rotationOffset: {x: 0, y: 0, z: 0, w: 0}
     scaleFactor: 1
     targetColor: {r: 0.9528302, g: 0.36306602, b: 0.1033731, a: 1}
   successReleaseFX:
-    posOffset: {x: 0, y: 0, z: 0}
     ease:
       serializedVersion: 2
       m_Curve:
@@ -1468,10 +1481,11 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+    posOffset: {x: 0, y: 0, z: 0}
+    rotationOffset: {x: 0, y: 0, z: 0, w: 0}
     scaleFactor: 1
     targetColor: {r: 0.32701433, g: 1, b: 0, a: 1}
   failureReleaseFX:
-    posOffset: {x: 0, y: 0, z: 0}
     ease:
       serializedVersion: 2
       m_Curve:
@@ -1496,6 +1510,8 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+    posOffset: {x: 0, y: 0, z: 0}
+    rotationOffset: {x: 0, y: 0, z: 0, w: 0}
     scaleFactor: 1
     targetColor: {r: 1, g: 0, b: 0, a: 1}
   attackDuration: 4
@@ -1568,7 +1584,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2054230134}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -24.242928, y: 20.169216, z: -77.815414}
+  m_LocalPosition: {x: 0, y: -5, z: 0}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 1675626564}
@@ -1581,6 +1597,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1480317160662327768, guid: 6538395789ad77146a5b7f60a52a1e57, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 1693ac4721228444fb769d5f82a73619, type: 3}
     - target: {fileID: 1480317160662327769, guid: 6538395789ad77146a5b7f60a52a1e57, type: 3}
       propertyPath: m_Name
       value: RhythmSystem
@@ -1628,6 +1648,10 @@ PrefabInstance:
     - target: {fileID: 1480317160662327770, guid: 6538395789ad77146a5b7f60a52a1e57, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1480317160662327771, guid: 6538395789ad77146a5b7f60a52a1e57, type: 3}
+      propertyPath: songBpm
+      value: 96
       objectReference: {fileID: 0}
     - target: {fileID: 1480317160662327771, guid: 6538395789ad77146a5b7f60a52a1e57, type: 3}
       propertyPath: notes.Array.data[0]
@@ -1680,11 +1704,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4181335048177425708, guid: bf3f3a3d699c4824682749e19223768c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4181335048177425708, guid: bf3f3a3d699c4824682749e19223768c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4181335048177425708, guid: bf3f3a3d699c4824682749e19223768c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1741,15 +1765,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5980759030916386000, guid: 4ad2a026ca5753b4e8eb0907d9889fc5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -19.242928
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 5980759030916386000, guid: 4ad2a026ca5753b4e8eb0907d9889fc5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 24.169216
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5980759030916386000, guid: 4ad2a026ca5753b4e8eb0907d9889fc5, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -77.815414
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5980759030916386000, guid: 4ad2a026ca5753b4e8eb0907d9889fc5, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1778,6 +1802,58 @@ PrefabInstance:
     - target: {fileID: 5980759030916386000, guid: 4ad2a026ca5753b4e8eb0907d9889fc5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5980759030916386001, guid: 4ad2a026ca5753b4e8eb0907d9889fc5, type: 3}
+      propertyPath: attackFX.posOffset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5980759030916386001, guid: 4ad2a026ca5753b4e8eb0907d9889fc5, type: 3}
+      propertyPath: attackFX.posOffset.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5980759030916386001, guid: 4ad2a026ca5753b4e8eb0907d9889fc5, type: 3}
+      propertyPath: sustainFX.posOffset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5980759030916386001, guid: 4ad2a026ca5753b4e8eb0907d9889fc5, type: 3}
+      propertyPath: attackFX.rotationOffset.w
+      value: 0.9238795
+      objectReference: {fileID: 0}
+    - target: {fileID: 5980759030916386001, guid: 4ad2a026ca5753b4e8eb0907d9889fc5, type: 3}
+      propertyPath: attackFX.rotationOffset.y
+      value: 0.38268346
+      objectReference: {fileID: 0}
+    - target: {fileID: 5980759030916386001, guid: 4ad2a026ca5753b4e8eb0907d9889fc5, type: 3}
+      propertyPath: failureReleaseFX.posOffset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5980759030916386001, guid: 4ad2a026ca5753b4e8eb0907d9889fc5, type: 3}
+      propertyPath: failureReleaseFX.posOffset.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5980759030916386001, guid: 4ad2a026ca5753b4e8eb0907d9889fc5, type: 3}
+      propertyPath: successReleaseFX.posOffset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5980759030916386001, guid: 4ad2a026ca5753b4e8eb0907d9889fc5, type: 3}
+      propertyPath: successReleaseFX.posOffset.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5980759030916386001, guid: 4ad2a026ca5753b4e8eb0907d9889fc5, type: 3}
+      propertyPath: failureReleaseFX.rotationOffset.w
+      value: 0.9238795
+      objectReference: {fileID: 0}
+    - target: {fileID: 5980759030916386001, guid: 4ad2a026ca5753b4e8eb0907d9889fc5, type: 3}
+      propertyPath: failureReleaseFX.rotationOffset.y
+      value: -0.38268346
+      objectReference: {fileID: 0}
+    - target: {fileID: 5980759030916386001, guid: 4ad2a026ca5753b4e8eb0907d9889fc5, type: 3}
+      propertyPath: successReleaseFX.rotationOffset.w
+      value: 0.9238795
+      objectReference: {fileID: 0}
+    - target: {fileID: 5980759030916386001, guid: 4ad2a026ca5753b4e8eb0907d9889fc5, type: 3}
+      propertyPath: successReleaseFX.rotationOffset.y
+      value: -0.38268346
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ad2a026ca5753b4e8eb0907d9889fc5, type: 3}
