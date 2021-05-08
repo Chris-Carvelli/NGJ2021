@@ -19,6 +19,8 @@ public class Movement : MonoBehaviour
     [HideInInspector]
     public bool canMove = true;
 
+    private Vector3 cameraOffset;
+
     void Start()
     {
         characterController = GetComponent<CharacterController>();
@@ -26,6 +28,10 @@ public class Movement : MonoBehaviour
         // Lock cursor
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+
+
+
+        cameraOffset = characterController.transform.position - playerCamera.transform.position;
     }
 
     void Update()
@@ -72,7 +78,27 @@ public class Movement : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+
+        canMove = false;
+
+
+        playerCamera.transform.position = playerCamera.transform.position + new Vector3(-2.82f, 0.49f, -1.13f);
+        //playerCamera.transform.position = new Vector3(0.67f, -0.72f, 0.14f);
+
+        playerCamera.transform.Rotate(0, 45, 0);
+
+
         Debug.Log("Collided");
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+
+        playerCamera.transform.position = characterController.transform.position - cameraOffset;
+        playerCamera.transform.Rotate(30, 30, 0);
+
+
+
     }
 
 }
