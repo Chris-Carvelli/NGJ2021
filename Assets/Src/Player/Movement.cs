@@ -11,6 +11,8 @@ public class Movement : MonoBehaviour
     public Camera playerCamera;
     public float lookSpeed = 2.0f;
     public float lookXLimit = 45.0f;
+    public float transitionSpeed = 0.5f;
+
 
     CharacterController characterController;
     Vector3 moveDirection = Vector3.zero;
@@ -19,7 +21,11 @@ public class Movement : MonoBehaviour
     [HideInInspector]
     public bool canMove = true;
 
+    private bool inTrigger = false;
     private Vector3 cameraOffset;
+    private Vector3 cameraStartPosition;
+    private Vector3 cameraEndPosition;
+
 
     void Start()
     {
@@ -74,18 +80,30 @@ public class Movement : MonoBehaviour
             playerCamera.transform.localRotation = Quaternion.Euler(rotationX, 0, 0);
             transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * lookSpeed, 0);
         }
+
+        
+
     }
 
     private void OnTriggerEnter(Collider other)
     {
 
-        canMove = false;
+       
+            //cameraStartPosition = playerCamera.transform.position;
+            //cameraEndPosition = playerCamera.transform.position + new Vector3(-2.82f, 0.49f, -1.13f);
+            //cameraEndPosition = playerCamera.transform.position + new Vector3(-10f,10f, -10f);
+        
+        //inTrigger = true;
+        //canMove = false;
+
+        
 
 
-        playerCamera.transform.position = playerCamera.transform.position + new Vector3(-2.82f, 0.49f, -1.13f);
+
+        //playerCamera.transform.position = playerCamera.transform.position + new Vector3(-2.82f, 0.49f, -1.13f);
         //playerCamera.transform.position = new Vector3(0.67f, -0.72f, 0.14f);
 
-        playerCamera.transform.Rotate(0, 45, 0);
+        //playerCamera.transform.Rotate(0, 45, 0);
 
 
         Debug.Log("Collided");
@@ -95,10 +113,21 @@ public class Movement : MonoBehaviour
     {
 
         playerCamera.transform.position = characterController.transform.position - cameraOffset;
-        playerCamera.transform.Rotate(30, 30, 0);
+        //playerCamera.transform.Rotate(30, 30, 0);
 
 
 
     }
+
+    //private void FixedUpdate()
+    //{
+     //   if (inTrigger)
+        //{
+            //Camera Transition
+      //      playerCamera.transform.position = Vector3.Lerp(cameraStartPosition, cameraEndPosition, Time.deltaTime * transitionSpeed);
+
+
+       // }
+    //}
 
 }
