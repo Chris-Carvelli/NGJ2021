@@ -32,6 +32,8 @@
             int _NormalEdge;
             int _UseColor;
 
+            int _DepthCorrection;
+
             float4 _EdgeColor;
             float4 _FaceColor;
             
@@ -95,9 +97,20 @@
 				// return color;
 				float edge = max(edgeDepth, edgeNormal);
 
-				float depth =   SAMPLE_DEPTH_TEXTURE(_CameraDepthTexture, sampler_CameraDepthTexture, i.texcoord).r;
-				// depth = Linear01Depth(depth);
-				return lerp(_FaceColor, _EdgeColor, edge);
+				//get depth from depth texture
+			    float depth = SAMPLE_DEPTH_TEXTURE(_CameraDepthTexture, sampler_CameraDepthTexture, i.texcoord).r;
+			    //linear depth between camera and far clipping plane
+			    depth = Linear01Depth(depth);
+			    	
+			    //depth as distance from camera in units
+			    depth = depth * (_ProjectionParams.z / 500);
+				// depth /= 1000;
+			    // return _FaceColor * depth;
+				// return lerp(_FaceColor * depth, color, 1 - depth);
+				// return depth;
+
+				float4 depthColor = lerp(_FaceColor, color, depth * _DepthCorrection);
+				return lerp(depthColor, _EdgeColor, edge);
 				if (edge < 1 && (
 					   colorMatch(color, float4(100, 0, 0, 1))		// glowing red
 					|| colorMatch(color, float4(.5, .1, 0, 1))		// hat brown

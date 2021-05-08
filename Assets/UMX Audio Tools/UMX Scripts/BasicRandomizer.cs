@@ -36,7 +36,7 @@ public class BasicRandomizer : MonoBehaviour
             audioSource.volume = volume;
 
             // Chooses a number between 1 and the length of audiofiles array. Moves chosen audioclip to source and plays it once.
-            int n = Random.Range(1, audioFiles.Length);
+            int n = Random.Range(0, audioFiles.Length - 1);
             audioSource.clip = audioFiles[n];
             audioSource.PlayOneShot(audioSource.clip);
 

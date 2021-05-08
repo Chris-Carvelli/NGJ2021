@@ -39,7 +39,10 @@ MonoBehaviour:
     value: {r: 0, g: 0, b: 0, a: 1}
   faceColor:
     overrideState: 1
-    value: {r: 0.5568628, g: 0.5647059, b: 0.55715847, a: 1}
+    value: {r: 0.71132076, g: 1, b: 0.8840229, a: 1}
+  depthCorrection:
+    overrideState: 1
+    value: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0

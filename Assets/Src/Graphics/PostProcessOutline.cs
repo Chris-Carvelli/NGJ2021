@@ -16,6 +16,8 @@ namespace Src.Graphics {
 
 		public ColorParameter edgeColor = new ColorParameter {value = Color.white};
 		public ColorParameter faceColor = new ColorParameter {value = Color.black};
+
+		public BoolParameter depthCorrection = new BoolParameter();
 	}
 
 	public sealed class PostProcessOutlineRenderer : PostProcessEffectRenderer<PostProcessOutline>
@@ -33,6 +35,8 @@ namespace Src.Graphics {
 			
 			sheet.properties.SetColor("_EdgeColor", settings.edgeColor);
 			sheet.properties.SetColor("_FaceColor", settings.faceColor);
+			
+			sheet.properties.SetInt("_DepthCorrection", settings.depthCorrection ? 1 : 0);
         
 			context.command.BlitFullscreenTriangle(context.source, context.destination, sheet, 0);
 		}
