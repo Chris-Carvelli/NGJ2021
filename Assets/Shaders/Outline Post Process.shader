@@ -31,6 +31,9 @@
             int _DeptEdge;
             int _NormalEdge;
             int _UseColor;
+
+            float4 _EdgeColor;
+            float4 _FaceColor;
             
 			// Combines the top and bottom colors using normal blending.
 			// https://en.wikipedia.org/wiki/Blend_modes#Normal_blend_mode
@@ -91,6 +94,10 @@
 
 				// return color;
 				float edge = max(edgeDepth, edgeNormal);
+
+				float depth =   SAMPLE_DEPTH_TEXTURE(_CameraDepthTexture, sampler_CameraDepthTexture, i.texcoord).r;
+				// depth = Linear01Depth(depth);
+				return lerp(_FaceColor, _EdgeColor, edge);
 				if (edge < 1 && (
 					   colorMatch(color, float4(100, 0, 0, 1))		// glowing red
 					|| colorMatch(color, float4(.5, .1, 0, 1))		// hat brown
@@ -101,7 +108,7 @@
 				))
 					return color;
 				// color = max(edge, color);
-				return edge;
+				return lerp(_FaceColor, _EdgeColor, edge);
 			}
 
             
