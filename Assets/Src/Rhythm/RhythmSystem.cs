@@ -21,9 +21,9 @@ namespace Src.Rhythm {
 
 		//keep all the position-in-beats of notes in the song
 		private float[][] _channels = new [] {
-			new [] { 0f, 8 },
-			new [] { 2f, 14 },
-			new [] { 2f, 10 },
+			new [] { 4f, 7 + 3 },
+			new [] { 5f, 8 + 3 },
+			new [] { 6f, 9 + 3 },
 			new [] { 4f, 20 },
 		};
 
@@ -75,7 +75,7 @@ namespace Src.Rhythm {
 		}
 
 		private void Update() {
-			if (Input.GetButton("Jump"))
+			if (Input.GetButtonDown("Jump"))
 				Init();
 			
 			if (_playing) {
