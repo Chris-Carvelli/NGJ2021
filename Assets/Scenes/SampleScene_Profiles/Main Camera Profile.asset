@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 760cb1eadbe2ecc4c892396993a645dd, type: 3}
   m_Name: PostProcessOutline
   m_EditorClassIdentifier: 
-  active: 0
+  active: 1
   enabled:
     overrideState: 1
     value: 1
@@ -36,13 +36,13 @@ MonoBehaviour:
     value: 0.627
   edgeColor:
     overrideState: 1
-    value: {r: 1, g: 0, b: 0, a: 1}
+    value: {r: 0, g: 0, b: 0, a: 1}
   faceColor:
     overrideState: 1
-    value: {r: 0, g: 1, b: 0.073735714, a: 1}
+    value: {r: 0.41720924, g: 0.31092027, b: 0.4811321, a: 1}
   depthCorrection:
     overrideState: 1
-    value: 0
+    value: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
