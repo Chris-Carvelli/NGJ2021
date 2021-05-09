@@ -37,19 +37,19 @@ namespace Src.Rhythm {
 		public bool successful;
 
 		private RhythmSystem _rhythmSystem;
-		private SpriteRenderer _renderer;
+		private Renderer _renderer;
 
 		public float score;
 		
 		private void Start() {
 			_rhythmSystem = RhythmSystem.Instance;
-			_renderer = GetComponent<SpriteRenderer>();
+			_renderer = GetComponent<Renderer>();
 
 			_startPos = transform.localPosition;
 			_startRot = transform.localRotation;
 			_startScale = transform.localScale;
 			
-			_startColor = _renderer.color;
+			_startColor = _renderer.material.color;
 		}
 
 		private void Update() {
@@ -98,14 +98,14 @@ namespace Src.Rhythm {
 				transform.localPosition = _startPos;
 				transform.localRotation = _startRot;
 				transform.localScale = _startScale;
-				_renderer.color = _startColor;
+				_renderer.material.color = _startColor;
 			}
 
 			if (state != State.Off) {
 				transform.localPosition = fx.GetPos(aPos, t);
 				transform.localRotation = fx.GetRot(_startRot, aRot, t);
 				transform.localScale = fx.GetScale(_startScale, aScale, t);
-				_renderer.color = fx.GetColor(aColor, t);
+				_renderer.material.color = fx.GetColor(aColor, t);
 			}
 		}
 

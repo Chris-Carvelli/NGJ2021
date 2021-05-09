@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Sound.BasicRandomizer;
 using UnityEngine.SceneManagement;
+using Src.Rhythm;
 
 
 
@@ -36,7 +37,9 @@ public class Movement : MonoBehaviour
     public AudioClip[] SpritTwoClips;
     public AudioClip[] SpritThreeClips;
 
-
+    [Header("Rhythm")]
+    public SO_Choreography choreography;
+    public NoteVisuals[] Channels;
 
 
 
@@ -227,6 +230,12 @@ public class Movement : MonoBehaviour
 
             //transform.Rotate(0, 111, 0);
             //transform.Rotate(42.5f, 0, 0);
+
+
+            //RhythmSystem.Instance.StartSong(choreography, Channels);
+
+
+
 
 
             Debug.Log("Collided");
