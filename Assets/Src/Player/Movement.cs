@@ -128,6 +128,7 @@ public class Movement : MonoBehaviour
         if (Input.GetKeyDown("escape"))
         {
 
+            Cursor.visible = true;
             SceneManager.LoadScene(0);
 
 
