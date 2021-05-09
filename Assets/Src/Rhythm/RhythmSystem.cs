@@ -7,6 +7,10 @@ namespace Src.Rhythm {
 	public class RhythmSystem : MonoBehaviour {
 		// singleton
 		public static RhythmSystem Instance { get; private set; }
+		
+		// references
+		public AudioSource musicSource;
+		
 		[Header("Song Config")]
 		//Song beats per minute
 		//This is determined by the song you're trying to sync up to
@@ -21,11 +25,13 @@ namespace Src.Rhythm {
 
 		//keep all the position-in-beats of notes in the song
 		private float[][] _channels = new [] {
-			new [] { 0f, 8 },
-			new [] { 2f, 14 },
-			new [] { 2f, 10 },
+			new [] { 4f, 10 },
+			new [] { 5f, 11 },
+			new [] { 6f, 12 },
 			new [] { 4f, 20 },
 		};
+
+		public SO_Choreography choreography;
 
 		public int[] _channelIdxs;
 		public int[] _channelLoops;
@@ -43,8 +49,6 @@ namespace Src.Rhythm {
 		//how much time (in seconds) has passed since the song started
 		public float dsptimesong;
 		
-		// references
-		private AudioSource _musicSource;
 
 		private bool _playing;
 
@@ -59,8 +63,12 @@ namespace Src.Rhythm {
 
 		private void Init() {
 			//Load the AudioSource attached to the Conductor GameObject
-			_musicSource = GetComponent<AudioSource>();
-
+			musicSource = GetComponent<AudioSource>();
+			musicSource.loop = looping;
+			musicSource.clip = choreography.music;
+			songBpm = choreography.bpm;
+			_channels = choreography.GetChannels();
+			
 			//Calculate the number of seconds in each beat
 			secPerBeat = 60f / songBpm;
 
@@ -69,15 +77,23 @@ namespace Src.Rhythm {
 
 			//Start the music
 			dsptimesong = (float)AudioSettings.dspTime;
-			_musicSource.Play();
+			musicSource.Play();
 
 			_playing = true;
 		}
 
+		public void StartSong(SO_Choreography pChoreography, NoteVisuals[] visuals) {
+			choreography = pChoreography;
+			notes = visuals;
+			Init();
+		}
+
+		public void StopSong() {
+			_playing = false;
+			musicSource.Pause();
+		}
+
 		private void Update() {
-			if (Input.GetButton("Jump"))
-				Init();
-			
 			if (_playing) {
 				HandleInputs();
 				UpdateSongState();
@@ -93,6 +109,9 @@ namespace Src.Rhythm {
 				var channelOffset = (channel[1] - channel[0]) * _channelLoops[i];
 
 				notes[i].successful = press >= notes[i]._attackT && press <= notes[i]._sustainT;
+
+				if (controller.pressedThisFrame[i])
+					notes[i].score += notes[i].successful ? choreography.successScore : choreography.failScore;
 			}
 		}
 
@@ -120,8 +139,7 @@ namespace Src.Rhythm {
 				}
 			}
 		}
-
-
+		
 		public float Time => songPosInBeats;
 	}
 }
