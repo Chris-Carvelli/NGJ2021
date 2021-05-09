@@ -165,8 +165,11 @@ public class Movement : MonoBehaviour
 
 
             //if (targetRotation -  transform.rotation)
-            if(countLookTheSky > 60)
+            if(countLookTheSky > 120)
+            {
                 lookTheSky = false;
+
+            }
 
         }
 
