@@ -38,6 +38,8 @@ namespace Src.Rhythm {
 
 		private RhythmSystem _rhythmSystem;
 		private SpriteRenderer _renderer;
+
+		public float score;
 		
 		private void Start() {
 			_rhythmSystem = RhythmSystem.Instance;
