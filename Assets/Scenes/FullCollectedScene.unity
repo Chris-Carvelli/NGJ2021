@@ -2519,6 +2519,88 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.29685208, y: 1.138299, z: 7.4095554}
   m_Center: {x: -0.023474708, y: -0.021503448, z: -0.49962723}
+--- !u!1001 &169798130
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 188863367}
+    m_Modifications:
+    - target: {fileID: 6234646939623341193, guid: 527b7d4eb9a493a4cbb126be4043651b, type: 3}
+      propertyPath: volumeMax
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6234646939623341193, guid: 527b7d4eb9a493a4cbb126be4043651b, type: 3}
+      propertyPath: volumeMin
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6234646939623341193, guid: 527b7d4eb9a493a4cbb126be4043651b, type: 3}
+      propertyPath: maxDelayTime
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 6234646939623341193, guid: 527b7d4eb9a493a4cbb126be4043651b, type: 3}
+      propertyPath: minDelayTime
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 6234646939623341196, guid: 527b7d4eb9a493a4cbb126be4043651b, type: 3}
+      propertyPath: m_Name
+      value: RandTrainAmb
+      objectReference: {fileID: 0}
+    - target: {fileID: 6234646939623341198, guid: 527b7d4eb9a493a4cbb126be4043651b, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 5081153124606060269, guid: 60a2f899572e81f4cac12479b3f1cb82, type: 2}
+    - target: {fileID: 6234646939623341199, guid: 527b7d4eb9a493a4cbb126be4043651b, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6234646939623341199, guid: 527b7d4eb9a493a4cbb126be4043651b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.74
+      objectReference: {fileID: 0}
+    - target: {fileID: 6234646939623341199, guid: 527b7d4eb9a493a4cbb126be4043651b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 6234646939623341199, guid: 527b7d4eb9a493a4cbb126be4043651b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 6234646939623341199, guid: 527b7d4eb9a493a4cbb126be4043651b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6234646939623341199, guid: 527b7d4eb9a493a4cbb126be4043651b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6234646939623341199, guid: 527b7d4eb9a493a4cbb126be4043651b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6234646939623341199, guid: 527b7d4eb9a493a4cbb126be4043651b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6234646939623341199, guid: 527b7d4eb9a493a4cbb126be4043651b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6234646939623341199, guid: 527b7d4eb9a493a4cbb126be4043651b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6234646939623341199, guid: 527b7d4eb9a493a4cbb126be4043651b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 527b7d4eb9a493a4cbb126be4043651b, type: 3}
+--- !u!4 &169798131 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6234646939623341199, guid: 527b7d4eb9a493a4cbb126be4043651b, type: 3}
+  m_PrefabInstance: {fileID: 169798130}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &171626630
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2797,6 +2879,7 @@ Transform:
   - {fileID: 868691269}
   - {fileID: 1343256205}
   - {fileID: 303355281}
+  - {fileID: 169798131}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -97328,6 +97411,8 @@ MonoBehaviour:
   audioRandomizer: {fileID: 419556530}
   stepDistance: 0.65
   BlockPlayerOnTrigger: 0
+  dialogueAudioSource: {fileID: 0}
+  subtitlesText: {fileID: 0}
   canMove: 1
 --- !u!1 &5571288073394321320
 GameObject:
