@@ -15599,8 +15599,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
       propertyPath: SpiritTwoText.Array.data[2]
-      value: "I\u2019ve spent my whole life studying our species, and I can assure
-        you \\nthere\u2019s nothing we can do to change our most primordial instincts. "
+      value: "I\u2019ve spent my whole life studying our species, \\n and I can assure
+        you there\u2019s nothing \\n we can do to change our most primordial instincts. "
       objectReference: {fileID: 0}
     - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
       propertyPath: SpiritTwoText.Array.data[3]
@@ -15875,7 +15875,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
       propertyPath: SpiritThreeText.Array.data[11]
-      value: "You can feel it in the air around you, there\u2019s something rotten
+      value: "You can feel it in the air around you, \\nthere\u2019s something rotten
         in here."
       objectReference: {fileID: 0}
     - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
@@ -15994,6 +15994,14 @@ PrefabInstance:
       propertyPath: OutputAudioMixerGroup
       value: 
       objectReference: {fileID: 3600185764037228633, guid: 60a2f899572e81f4cac12479b3f1cb82, type: 2}
+    - target: {fileID: 6419241956123415173, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.77
+      objectReference: {fileID: 0}
+    - target: {fileID: 6419241956123415174, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6419241956123415175, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
       propertyPath: m_Color.rgba
       value: 4278190080
