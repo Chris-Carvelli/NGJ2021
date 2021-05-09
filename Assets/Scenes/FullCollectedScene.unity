@@ -4676,7 +4676,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2199474817076617558, guid: 4081d409b9deebe46b948e144cc8ab31, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -26.7
+      value: -25.11
       objectReference: {fileID: 0}
     - target: {fileID: 2199474817076617558, guid: 4081d409b9deebe46b948e144cc8ab31, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4684,7 +4684,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2199474817076617558, guid: 4081d409b9deebe46b948e144cc8ab31, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 82.8
+      value: 81.68
       objectReference: {fileID: 0}
     - target: {fileID: 2199474817076617558, guid: 4081d409b9deebe46b948e144cc8ab31, type: 3}
       propertyPath: m_LocalRotation.w
@@ -18428,7 +18428,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2199474817076617558, guid: 4081d409b9deebe46b948e144cc8ab31, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.91
+      value: -10.48
       objectReference: {fileID: 0}
     - target: {fileID: 2199474817076617558, guid: 4081d409b9deebe46b948e144cc8ab31, type: 3}
       propertyPath: m_LocalPosition.y
@@ -18436,7 +18436,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2199474817076617558, guid: 4081d409b9deebe46b948e144cc8ab31, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 20.44
+      value: 18.61
       objectReference: {fileID: 0}
     - target: {fileID: 2199474817076617558, guid: 4081d409b9deebe46b948e144cc8ab31, type: 3}
       propertyPath: m_LocalRotation.w
@@ -21109,7 +21109,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 818068881381173048, guid: 47e35ac23e7e8e846b6aff5c720a00a2, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 15.204605
       objectReference: {fileID: 0}
     - target: {fileID: 818068881381173048, guid: 47e35ac23e7e8e846b6aff5c720a00a2, type: 3}
       propertyPath: m_audioClip
