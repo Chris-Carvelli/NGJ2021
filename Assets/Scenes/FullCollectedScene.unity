@@ -10523,6 +10523,7 @@ GameObject:
   - component: {fileID: 784885967}
   - component: {fileID: 784885966}
   - component: {fileID: 784885965}
+  - component: {fileID: 784885968}
   m_Layer: 0
   m_Name: Spirit Test
   m_TagString: Untagged
@@ -10614,12 +10615,25 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 784885964}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.22, y: 7.14, z: -20.4}
+  m_LocalPosition: {x: -7.22, y: 3.51, z: -20.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &784885968
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 784885964}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 3, z: 2}
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!4 &786175388 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4341920262578424, guid: b5f88c299f5594273a868f2f3fe5b675, type: 3}
@@ -10868,6 +10882,7 @@ GameObject:
   - component: {fileID: 814800999}
   - component: {fileID: 814800998}
   - component: {fileID: 814800997}
+  - component: {fileID: 814801000}
   m_Layer: 0
   m_Name: Spirit Test (1)
   m_TagString: Untagged
@@ -10959,12 +10974,25 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 814800996}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.25, y: 5.97, z: 76.4}
+  m_LocalPosition: {x: -12.25, y: 3.57, z: 76.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &814801000
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 814800996}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 3, z: 2}
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!1001 &815898918
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15005,6 +15033,120 @@ PrefabInstance:
       propertyPath: audioRandomizer
       value: 
       objectReference: {fileID: 1624579682}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpiritOneText.Array.size
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpritOneClips.Array.size
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpiritOneText.Array.data[0]
+      value: 'Can you hear it?? '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpiritOneText.Array.data[1]
+      value: "Yes\u2026 It\u2019s getting closer... I can feel it! "
+      objectReference: {fileID: 0}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpiritOneText.Array.data[2]
+      value: "I hope we will leave soon, you know\u2026"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpiritOneText.Array.data[3]
+      value: "I can\u2019t wait to be back on the streets."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpiritOneText.Array.data[4]
+      value: ' I miss those good old days, when I used to hang around the city, looking
+        for some shiny stuff to smuggle into my pocket... '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpiritOneText.Array.data[5]
+      value: "Here there\u2019s nothing really interesting, aside from the station
+        clock, but that one seems too hard to reach, you know... "
+      objectReference: {fileID: 0}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpiritOneText.Array.data[6]
+      value: 'Well, my style is more about grab and run.  '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpiritOneText.Array.data[7]
+      value: ' I was the fastest guy to ever step into this world.  '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpiritOneText.Array.data[8]
+      value: ' And it is true... No one was ever able to catch me.  '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpiritOneText.Array.data[9]
+      value: "Necklaces, purses, watches\u2026 you name it! "
+      objectReference: {fileID: 0}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpritOneClips.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: dc7c057a7c9245743b4b750ef7756987, type: 3}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpritOneClips.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 405424d9457d5b04eb9ef54a38b3bfdb, type: 3}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpritOneClips.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: b4e389a795c19384dbe70a52311ad899, type: 3}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpritOneClips.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: 49223cfc9e836744e84809b02f0ee634, type: 3}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpritOneClips.Array.data[4]
+      value: 
+      objectReference: {fileID: 8300000, guid: cd5e5f88b87064f46b90c2756fb7b252, type: 3}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpritOneClips.Array.data[5]
+      value: 
+      objectReference: {fileID: 8300000, guid: f6b121c34f9878f4e8e5c4321cba64c8, type: 3}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpritOneClips.Array.data[6]
+      value: 
+      objectReference: {fileID: 8300000, guid: 49223cfc9e836744e84809b02f0ee634, type: 3}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpritOneClips.Array.data[7]
+      value: 
+      objectReference: {fileID: 8300000, guid: 405424d9457d5b04eb9ef54a38b3bfdb, type: 3}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpritOneClips.Array.data[8]
+      value: 
+      objectReference: {fileID: 8300000, guid: b4e389a795c19384dbe70a52311ad899, type: 3}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpritOneClips.Array.data[9]
+      value: 
+      objectReference: {fileID: 8300000, guid: 49223cfc9e836744e84809b02f0ee634, type: 3}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpiritOneText.Array.data[10]
+      value: "What you\u2019re lookin\u2019 at? "
+      objectReference: {fileID: 0}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpiritOneText.Array.data[11]
+      value: ' Oh, do you think you can catch me? '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpiritOneText.Array.data[12]
+      value: 'I dare you to! '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpritOneClips.Array.data[10]
+      value: 
+      objectReference: {fileID: 8300000, guid: cd5e5f88b87064f46b90c2756fb7b252, type: 3}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpritOneClips.Array.data[11]
+      value: 
+      objectReference: {fileID: 8300000, guid: 405424d9457d5b04eb9ef54a38b3bfdb, type: 3}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpritOneClips.Array.data[12]
+      value: 
+      objectReference: {fileID: 8300000, guid: f6b121c34f9878f4e8e5c4321cba64c8, type: 3}
     - target: {fileID: 1460444393027852972, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -15048,6 +15190,14 @@ PrefabInstance:
     - target: {fileID: 1460444393027852972, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7138958156798879657, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: m_ShowCustomSorter
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7138958156798879659, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
@@ -19962,6 +20112,7 @@ GameObject:
   - component: {fileID: 1429233629}
   - component: {fileID: 1429233628}
   - component: {fileID: 1429233627}
+  - component: {fileID: 1429233630}
   m_Layer: 0
   m_Name: Spirit Test (2)
   m_TagString: Untagged
@@ -20053,12 +20204,25 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1429233626}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.976, y: 6.907, z: 14.2}
+  m_LocalPosition: {x: -0.64, y: 3.34, z: 37.28}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1429233630
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1429233626}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 3, z: 2}
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!4 &1433148738 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4341920262578424, guid: b5f88c299f5594273a868f2f3fe5b675, type: 3}
