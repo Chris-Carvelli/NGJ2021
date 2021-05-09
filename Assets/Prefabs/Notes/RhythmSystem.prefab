@@ -45,15 +45,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d50d8df1e9d4013883c19f21a63465d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  songBpm: 120
+  songBpm: 94
   looping: 1
   beatsShownInAdvance: 0.5
-  notes:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  notes: []
   controller: {fileID: 1480317160662327773}
+  choreography: {fileID: 11400000, guid: 17e9e2823c68ba34daf32c0bba32eb0c, type: 2}
   _channelIdxs: 
   _channelLoops: 
   songPosition: 0
@@ -70,7 +67,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: c538455f5f45711479c4565f13b0e282, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 298b8f338b83f634eb0e401da4ea7c75, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -176,3 +173,4 @@ MonoBehaviour:
   inputSnap: 1
   tolerance: 0.2
   lastInputPresses: []
+  pressedThisFrame: 
