@@ -32,7 +32,22 @@ public class Movement : MonoBehaviour
 
     [Header("Dialog audio source")]
     public AudioSource dialogueAudioSource;
+    public AudioClip[] SpritOneClips;
+    public AudioClip[] SpritTwoClips;
+    public AudioClip[] SpritThreeClips;
+
+
+
+
+
+    [Header("Dialog text")]
     public GameObject subtitlesText;
+    public string[] SpiritOneText;
+    public string[] SpiritTwoText;
+    public string[] SpiritThreeText;
+
+
+
 
     CharacterController characterController;
     Vector3 moveDirection = Vector3.zero;
@@ -51,7 +66,9 @@ public class Movement : MonoBehaviour
     private Vector3 targetDirection;
     private Quaternion targetRotation;
     private int countLookTheSky;
-
+    private int textIndex;
+    private string[] currentText;
+    public AudioClip[] CurrentClips;
 
 
     void Start()
@@ -148,10 +165,20 @@ public class Movement : MonoBehaviour
 
 
             //if (targetRotation -  transform.rotation)
-            if(countLookTheSky > 20)
+            if(countLookTheSky > 60)
                 lookTheSky = false;
 
         }
+
+
+        if (!canMove && textIndex <= currentText.Length)
+        {
+
+            displayDialogue(currentText);
+
+
+        }
+
 
     }
 
@@ -173,19 +200,31 @@ public class Movement : MonoBehaviour
 
             countLookTheSky = 0;
 
+            textIndex = 0;
+
             //targetDirection = transform.position - new Vector3(transform.position.x + 10, transform.position.y + 10, transform.position.z);
 
             targetRotation *= Quaternion.AngleAxis(45, -Vector3.right);
 
             lookTheSky = true;
 
+            //dialogueAudioSource.Play();
+
+
+            currentText = SpiritOneText;
+            CurrentClips = SpritOneClips;
+
+
+            subtitlesText.GetComponent<TextMesh>().text = currentText[0];
+            dialogueAudioSource.GetComponent<AudioSource>().clip = CurrentClips[textIndex];
+
             dialogueAudioSource.Play();
 
+            subtitlesText.SetActive(true);
 
             //transform.Rotate(0, 111, 0);
             //transform.Rotate(42.5f, 0, 0);
 
-            subtitlesText.SetActive(true);
 
             Debug.Log("Collided");
 
@@ -194,6 +233,92 @@ public class Movement : MonoBehaviour
 
 
         }
+
+        if (other.gameObject.name == "Spirit Test (1)")
+        {
+
+
+            countLookTheSky = 0;
+
+            textIndex = 0;
+
+            //targetDirection = transform.position - new Vector3(transform.position.x + 10, transform.position.y + 10, transform.position.z);
+
+            targetRotation *= Quaternion.AngleAxis(45, -Vector3.right);
+
+            lookTheSky = true;
+
+            //dialogueAudioSource.Play();
+
+
+            currentText = SpiritTwoText;
+            CurrentClips = SpritTwoClips;
+
+
+            subtitlesText.GetComponent<TextMesh>().text = currentText[0];
+            dialogueAudioSource.GetComponent<AudioSource>().clip = CurrentClips[textIndex];
+
+            dialogueAudioSource.Play();
+
+            subtitlesText.SetActive(true);
+
+            //transform.Rotate(0, 111, 0);
+            //transform.Rotate(42.5f, 0, 0);
+
+
+            Debug.Log("Collided");
+
+
+            other.gameObject.GetComponent<BoxCollider>().enabled = false;
+
+
+        }
+
+
+        if (other.gameObject.name == "Spirit Test (2)")
+        {
+
+
+            countLookTheSky = 0;
+
+            textIndex = 0;
+
+            //targetDirection = transform.position - new Vector3(transform.position.x + 10, transform.position.y + 10, transform.position.z);
+
+            targetRotation *= Quaternion.AngleAxis(45, -Vector3.right);
+
+            lookTheSky = true;
+
+            //dialogueAudioSource.Play();
+
+
+            currentText = SpiritThreeText;
+            CurrentClips = SpritThreeClips;
+
+
+            subtitlesText.GetComponent<TextMesh>().text = currentText[0];
+            dialogueAudioSource.GetComponent<AudioSource>().clip = CurrentClips[textIndex];
+
+            dialogueAudioSource.Play();
+
+            subtitlesText.SetActive(true);
+
+            //transform.Rotate(0, 111, 0);
+            //transform.Rotate(42.5f, 0, 0);
+
+
+            Debug.Log("Collided");
+
+
+            other.gameObject.GetComponent<BoxCollider>().enabled = false;
+
+
+        }
+
+
+
+
+
 
 
         if (BlockPlayerOnTrigger)
@@ -215,6 +340,49 @@ public class Movement : MonoBehaviour
 
         
     }
+
+
+
+
+
+
+
+
+    private void displayDialogue( string[] TextArray)
+    {
+
+        if (Input.GetButtonDown("Jump") && textIndex < TextArray.Length)
+        {
+            Debug.Log("Index " + textIndex);
+            textIndex++;
+
+            subtitlesText.GetComponent<TextMesh>().text = TextArray[textIndex];
+
+            dialogueAudioSource.GetComponent<AudioSource>().clip = CurrentClips[textIndex];
+            dialogueAudioSource.Play();
+
+
+
+        }
+
+
+        if (textIndex == TextArray.Length)
+        {
+            //lookTheSky = false;
+            subtitlesText.SetActive(false);
+
+            countLookTheSky = 0;
+
+            targetRotation *= Quaternion.AngleAxis(45, Vector3.right);
+            lookTheSky = true;
+
+            canMove = true;
+        }
+
+
+    }
+
+
 
     private void OnTriggerExit(Collider other)
     {
