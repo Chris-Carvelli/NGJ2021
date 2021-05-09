@@ -42,7 +42,7 @@ MonoBehaviour:
     value: {r: 0.41720924, g: 0.31092027, b: 0.4811321, a: 1}
   depthCorrection:
     overrideState: 1
-    value: 0
+    value: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0

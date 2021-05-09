@@ -10988,7 +10988,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 814800996}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 2, y: 3, z: 2}
@@ -15038,8 +15038,24 @@ PrefabInstance:
       value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpiritTwoText.Array.size
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
       propertyPath: SpritOneClips.Array.size
       value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpritTwoClips.Array.size
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpiritThreeText.Array.size
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpritThreeClips.Array.size
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
       propertyPath: SpiritOneText.Array.data[0]
@@ -15059,13 +15075,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
       propertyPath: SpiritOneText.Array.data[4]
-      value: ' I miss those good old days, when I used to hang around the city, looking
+      value: 'I miss those good old days, when I used to hang around the city, \nlooking
         for some shiny stuff to smuggle into my pocket... '
       objectReference: {fileID: 0}
     - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
       propertyPath: SpiritOneText.Array.data[5]
       value: "Here there\u2019s nothing really interesting, aside from the station
-        clock, but that one seems too hard to reach, you know... "
+        clock,\\nbut that one seems too hard to reach, you know... "
       objectReference: {fileID: 0}
     - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
       propertyPath: SpiritOneText.Array.data[6]
@@ -15073,7 +15089,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
       propertyPath: SpiritOneText.Array.data[7]
-      value: ' I was the fastest guy to ever step into this world.  '
+      value: 'I was the fastest guy to ever step into this world.  '
       objectReference: {fileID: 0}
     - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
       propertyPath: SpiritOneText.Array.data[8]
@@ -15084,45 +15100,130 @@ PrefabInstance:
       value: "Necklaces, purses, watches\u2026 you name it! "
       objectReference: {fileID: 0}
     - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpiritTwoText.Array.data[0]
+      value: 'Are you one of those fools who think this train will be our savior? '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpiritTwoText.Array.data[1]
+      value: "Then you should think twice. There\u2019s no hope for our kind. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpiritTwoText.Array.data[2]
+      value: "I\u2019ve spent my whole life studying our species, and I can assure
+        you \\nthere\u2019s nothing we can do to change our most primordial instincts. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpiritTwoText.Array.data[3]
+      value: 'As alpha beings, we are programmed to crush our competition \nand become
+        the dominant specimen. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpiritTwoText.Array.data[4]
+      value: "I\u2019ve been there and seen horrors\u2026 horrors that you\u2019ll
+        never see. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpiritTwoText.Array.data[5]
+      value: "If there\u2019s anything we could wish for, it's for that train not
+        to arrive. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpiritTwoText.Array.data[6]
+      value: 'At least here, we are safe and far from our own kind. \nAnd who knows
+        what awaits you on the other side. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpiritTwoText.Array.data[7]
+      value: 'Our best bet is to just sit and wait for our time to come... '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpiritTwoText.Array.data[8]
+      value: "\u2026\u2026 "
+      objectReference: {fileID: 0}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpiritTwoText.Array.data[9]
+      value: "Do you think I\u2019m wrong?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
       propertyPath: SpritOneClips.Array.data[0]
       value: 
-      objectReference: {fileID: 8300000, guid: dc7c057a7c9245743b4b750ef7756987, type: 3}
+      objectReference: {fileID: 8300000, guid: 7c468a0533dcd1f40bb1f736b90e0af2, type: 3}
     - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
       propertyPath: SpritOneClips.Array.data[1]
       value: 
-      objectReference: {fileID: 8300000, guid: 405424d9457d5b04eb9ef54a38b3bfdb, type: 3}
+      objectReference: {fileID: 8300000, guid: caa5efbe5dc700a429e99542989ff277, type: 3}
     - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
       propertyPath: SpritOneClips.Array.data[2]
       value: 
-      objectReference: {fileID: 8300000, guid: b4e389a795c19384dbe70a52311ad899, type: 3}
+      objectReference: {fileID: 8300000, guid: 8c1cb513d7d68d9429bb5ca52cd34dda, type: 3}
     - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
       propertyPath: SpritOneClips.Array.data[3]
       value: 
-      objectReference: {fileID: 8300000, guid: 49223cfc9e836744e84809b02f0ee634, type: 3}
+      objectReference: {fileID: 8300000, guid: 787c1ea1ecd3740448cf11e259fb5936, type: 3}
     - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
       propertyPath: SpritOneClips.Array.data[4]
       value: 
-      objectReference: {fileID: 8300000, guid: cd5e5f88b87064f46b90c2756fb7b252, type: 3}
+      objectReference: {fileID: 8300000, guid: 67bd9c11ec1316845ad2e73f3daab493, type: 3}
     - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
       propertyPath: SpritOneClips.Array.data[5]
       value: 
-      objectReference: {fileID: 8300000, guid: f6b121c34f9878f4e8e5c4321cba64c8, type: 3}
+      objectReference: {fileID: 8300000, guid: 01c706e8ce26e97488297541fca64f4d, type: 3}
     - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
       propertyPath: SpritOneClips.Array.data[6]
       value: 
-      objectReference: {fileID: 8300000, guid: 49223cfc9e836744e84809b02f0ee634, type: 3}
+      objectReference: {fileID: 8300000, guid: a3b5655269edd4841bbb38172e34208c, type: 3}
     - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
       propertyPath: SpritOneClips.Array.data[7]
       value: 
-      objectReference: {fileID: 8300000, guid: 405424d9457d5b04eb9ef54a38b3bfdb, type: 3}
+      objectReference: {fileID: 8300000, guid: 72835eb287c4ca54b86e9ed9e9a30b8e, type: 3}
     - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
       propertyPath: SpritOneClips.Array.data[8]
       value: 
-      objectReference: {fileID: 8300000, guid: b4e389a795c19384dbe70a52311ad899, type: 3}
+      objectReference: {fileID: 8300000, guid: 14aaac23d869b144e8f874c34adb7c21, type: 3}
     - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
       propertyPath: SpritOneClips.Array.data[9]
       value: 
-      objectReference: {fileID: 8300000, guid: 49223cfc9e836744e84809b02f0ee634, type: 3}
+      objectReference: {fileID: 8300000, guid: 3d93c8b6a07f0434799962798fe5c316, type: 3}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpritTwoClips.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 7c468a0533dcd1f40bb1f736b90e0af2, type: 3}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpritTwoClips.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: caa5efbe5dc700a429e99542989ff277, type: 3}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpritTwoClips.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 8c1cb513d7d68d9429bb5ca52cd34dda, type: 3}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpritTwoClips.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: 787c1ea1ecd3740448cf11e259fb5936, type: 3}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpritTwoClips.Array.data[4]
+      value: 
+      objectReference: {fileID: 8300000, guid: 67bd9c11ec1316845ad2e73f3daab493, type: 3}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpritTwoClips.Array.data[5]
+      value: 
+      objectReference: {fileID: 8300000, guid: 01c706e8ce26e97488297541fca64f4d, type: 3}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpritTwoClips.Array.data[6]
+      value: 
+      objectReference: {fileID: 8300000, guid: a3b5655269edd4841bbb38172e34208c, type: 3}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpritTwoClips.Array.data[7]
+      value: 
+      objectReference: {fileID: 8300000, guid: 72835eb287c4ca54b86e9ed9e9a30b8e, type: 3}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpritTwoClips.Array.data[8]
+      value: 
+      objectReference: {fileID: 8300000, guid: 14aaac23d869b144e8f874c34adb7c21, type: 3}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpritTwoClips.Array.data[9]
+      value: 
+      objectReference: {fileID: 8300000, guid: 3d93c8b6a07f0434799962798fe5c316, type: 3}
     - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
       propertyPath: SpiritOneText.Array.data[10]
       value: "What you\u2019re lookin\u2019 at? "
@@ -15136,17 +15237,182 @@ PrefabInstance:
       value: 'I dare you to! '
       objectReference: {fileID: 0}
     - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpiritTwoText.Array.data[10]
+      value: 'Well, I can prove my point with a simple experiment. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
       propertyPath: SpritOneClips.Array.data[10]
       value: 
-      objectReference: {fileID: 8300000, guid: cd5e5f88b87064f46b90c2756fb7b252, type: 3}
+      objectReference: {fileID: 8300000, guid: 4156c4f0cf9cdbc41b2f89db524f0ded, type: 3}
     - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
       propertyPath: SpritOneClips.Array.data[11]
       value: 
-      objectReference: {fileID: 8300000, guid: 405424d9457d5b04eb9ef54a38b3bfdb, type: 3}
+      objectReference: {fileID: 8300000, guid: 94e53d4f34fe2874b9845565d2bae423, type: 3}
     - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
       propertyPath: SpritOneClips.Array.data[12]
       value: 
-      objectReference: {fileID: 8300000, guid: f6b121c34f9878f4e8e5c4321cba64c8, type: 3}
+      objectReference: {fileID: 8300000, guid: 447e7af1d4e41074a9f7934b7aea1670, type: 3}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpritTwoClips.Array.data[10]
+      value: 
+      objectReference: {fileID: 8300000, guid: 4156c4f0cf9cdbc41b2f89db524f0ded, type: 3}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpritTwoClips.Array.data[11]
+      value: 
+      objectReference: {fileID: 8300000, guid: 94e53d4f34fe2874b9845565d2bae423, type: 3}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpritTwoClips.Array.data[12]
+      value: 
+      objectReference: {fileID: 8300000, guid: 447e7af1d4e41074a9f7934b7aea1670, type: 3}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpritTwoClips.Array.data[13]
+      value: 
+      objectReference: {fileID: 8300000, guid: 324649181825835499f62c8a4270dbdc, type: 3}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpritTwoClips.Array.data[14]
+      value: 
+      objectReference: {fileID: 8300000, guid: 9bf0ab0a881a8ea4ea4ba9ff2a2023b6, type: 3}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpritTwoClips.Array.data[15]
+      value: 
+      objectReference: {fileID: 8300000, guid: 160c836200d3f2a48b6cb249f6d192cf, type: 3}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpiritThreeText.Array.data[0]
+      value: 'Hello friend! '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpiritThreeText.Array.data[1]
+      value: "It\u2019s not every day that you see a new face around here. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpiritThreeText.Array.data[2]
+      value: "I\u2019ve been seated on this metal bench for as many years \\nas the
+        number of stars you can count in the night sky. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpiritThreeText.Array.data[3]
+      value: "Here you can\u2019t see stars, just clouds, and fog. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpiritThreeText.Array.data[4]
+      value: 'I can barely remember how a starry sky looks like. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpiritThreeText.Array.data[5]
+      value: 'Back in time, I would be able to name any constellation \non every
+        single kingdom''s night sky. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpiritThreeText.Array.data[6]
+      value: "I\u2019ve spent decades expanding my realms, until I ruled \\nevery
+        piece of land that ever existed. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpiritThreeText.Array.data[7]
+      value: "I\u2019ve sailed every route available, trading all kinds of precious
+        stones, \\nand finding every relic you\u2019ve ever heard of... "
+      objectReference: {fileID: 0}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpiritThreeText.Array.data[8]
+      value: "To be honest, I can tell you every single event in my whole life, \\nbut
+        I can\u2019t remember anyone I\u2019ve ever met. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpiritThreeText.Array.data[9]
+      value: '... '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpritThreeClips.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 7c468a0533dcd1f40bb1f736b90e0af2, type: 3}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpritThreeClips.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: caa5efbe5dc700a429e99542989ff277, type: 3}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpritThreeClips.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 8c1cb513d7d68d9429bb5ca52cd34dda, type: 3}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpritThreeClips.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: 787c1ea1ecd3740448cf11e259fb5936, type: 3}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpritThreeClips.Array.data[4]
+      value: 
+      objectReference: {fileID: 8300000, guid: 67bd9c11ec1316845ad2e73f3daab493, type: 3}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpritThreeClips.Array.data[5]
+      value: 
+      objectReference: {fileID: 8300000, guid: 01c706e8ce26e97488297541fca64f4d, type: 3}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpritThreeClips.Array.data[6]
+      value: 
+      objectReference: {fileID: 8300000, guid: a3b5655269edd4841bbb38172e34208c, type: 3}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpritThreeClips.Array.data[7]
+      value: 
+      objectReference: {fileID: 8300000, guid: 72835eb287c4ca54b86e9ed9e9a30b8e, type: 3}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpritThreeClips.Array.data[8]
+      value: 
+      objectReference: {fileID: 8300000, guid: 14aaac23d869b144e8f874c34adb7c21, type: 3}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpritThreeClips.Array.data[9]
+      value: 
+      objectReference: {fileID: 8300000, guid: 3d93c8b6a07f0434799962798fe5c316, type: 3}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpiritThreeText.Array.data[10]
+      value: This is no place for regular men.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpiritThreeText.Array.data[11]
+      value: "You can feel it in the air around you, there\u2019s something rotten
+        in here."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpiritThreeText.Array.data[12]
+      value: "I\u2019m tired and it seems like I\u2019ve lost the memories that really
+        matter. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpiritThreeText.Array.data[13]
+      value: "I still have a little melody chanting through my mind, \\nbut I can\u2019t
+        really remember where it came from. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpiritThreeText.Array.data[14]
+      value: "It\u2019s been here for some time, and now I\u2019m afraid it might
+        get lost. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpiritThreeText.Array.data[15]
+      value: 'Maybe you could help me sort it?  '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpritThreeClips.Array.data[10]
+      value: 
+      objectReference: {fileID: 8300000, guid: 4156c4f0cf9cdbc41b2f89db524f0ded, type: 3}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpritThreeClips.Array.data[11]
+      value: 
+      objectReference: {fileID: 8300000, guid: 94e53d4f34fe2874b9845565d2bae423, type: 3}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpritThreeClips.Array.data[12]
+      value: 
+      objectReference: {fileID: 8300000, guid: 447e7af1d4e41074a9f7934b7aea1670, type: 3}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpritThreeClips.Array.data[13]
+      value: 
+      objectReference: {fileID: 8300000, guid: 324649181825835499f62c8a4270dbdc, type: 3}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpritThreeClips.Array.data[14]
+      value: 
+      objectReference: {fileID: 8300000, guid: 9bf0ab0a881a8ea4ea4ba9ff2a2023b6, type: 3}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: SpritThreeClips.Array.data[15]
+      value: 
+      objectReference: {fileID: 8300000, guid: 160c836200d3f2a48b6cb249f6d192cf, type: 3}
     - target: {fileID: 1460444393027852972, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -15190,6 +15456,10 @@ PrefabInstance:
     - target: {fileID: 1460444393027852972, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6419241956123415175, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: m_Color.rgba
+      value: 4278190080
       objectReference: {fileID: 0}
     - target: {fileID: 7138958156798879657, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
       propertyPath: m_ShowCustomSorter
@@ -20218,7 +20488,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1429233626}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 2, y: 3, z: 2}

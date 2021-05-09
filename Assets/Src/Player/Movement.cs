@@ -359,7 +359,7 @@ public class Movement : MonoBehaviour
             Debug.Log("Index " + textIndex);
             textIndex++;
 
-            subtitlesText.GetComponent<TextMesh>().text = TextArray[textIndex];
+            subtitlesText.GetComponent<TextMesh>().text = TextArray[textIndex].Replace("\\n", "\n");
 
             dialogueAudioSource.GetComponent<AudioSource>().clip = CurrentClips[textIndex];
             dialogueAudioSource.Play();
