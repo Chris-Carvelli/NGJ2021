@@ -1824,7 +1824,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1480317160662327771, guid: 6538395789ad77146a5b7f60a52a1e57, type: 3}
       propertyPath: songBpm
-      value: 60
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 1480317160662327771, guid: 6538395789ad77146a5b7f60a52a1e57, type: 3}
       propertyPath: notes.Array.data[0]
@@ -1982,7 +1982,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5980759030916386001, guid: 4ad2a026ca5753b4e8eb0907d9889fc5, type: 3}
       propertyPath: releaseDuration
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5980759030916386001, guid: 4ad2a026ca5753b4e8eb0907d9889fc5, type: 3}
       propertyPath: sustainDuration
@@ -2026,7 +2026,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5980759030916386001, guid: 4ad2a026ca5753b4e8eb0907d9889fc5, type: 3}
       propertyPath: failureReleaseFX.ease.m_Curve.Array.size
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5980759030916386001, guid: 4ad2a026ca5753b4e8eb0907d9889fc5, type: 3}
       propertyPath: successReleaseFX.ease.m_Curve.Array.size
@@ -2186,19 +2186,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5980759030916386001, guid: 4ad2a026ca5753b4e8eb0907d9889fc5, type: 3}
       propertyPath: failureReleaseFX.ease.m_Curve.Array.data[1].time
-      value: 0.011460766
-      objectReference: {fileID: 0}
-    - target: {fileID: 5980759030916386001, guid: 4ad2a026ca5753b4e8eb0907d9889fc5, type: 3}
-      propertyPath: failureReleaseFX.ease.m_Curve.Array.data[2].time
-      value: 0.09010619
-      objectReference: {fileID: 0}
-    - target: {fileID: 5980759030916386001, guid: 4ad2a026ca5753b4e8eb0907d9889fc5, type: 3}
-      propertyPath: failureReleaseFX.ease.m_Curve.Array.data[3].time
       value: 0.15305528
       objectReference: {fileID: 0}
     - target: {fileID: 5980759030916386001, guid: 4ad2a026ca5753b4e8eb0907d9889fc5, type: 3}
-      propertyPath: failureReleaseFX.ease.m_Curve.Array.data[4].time
+      propertyPath: failureReleaseFX.ease.m_Curve.Array.data[2].time
       value: 0.34781748
+      objectReference: {fileID: 0}
+    - target: {fileID: 5980759030916386001, guid: 4ad2a026ca5753b4e8eb0907d9889fc5, type: 3}
+      propertyPath: failureReleaseFX.ease.m_Curve.Array.data[3].time
+      value: 1.1950989
+      objectReference: {fileID: 0}
+    - target: {fileID: 5980759030916386001, guid: 4ad2a026ca5753b4e8eb0907d9889fc5, type: 3}
+      propertyPath: failureReleaseFX.ease.m_Curve.Array.data[4].time
+      value: 1.1950989
       objectReference: {fileID: 0}
     - target: {fileID: 5980759030916386001, guid: 4ad2a026ca5753b4e8eb0907d9889fc5, type: 3}
       propertyPath: failureReleaseFX.ease.m_Curve.Array.data[5].time
@@ -2222,19 +2222,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5980759030916386001, guid: 4ad2a026ca5753b4e8eb0907d9889fc5, type: 3}
       propertyPath: failureReleaseFX.ease.m_Curve.Array.data[1].value
-      value: 0.49482733
-      objectReference: {fileID: 0}
-    - target: {fileID: 5980759030916386001, guid: 4ad2a026ca5753b4e8eb0907d9889fc5, type: 3}
-      propertyPath: failureReleaseFX.ease.m_Curve.Array.data[2].value
-      value: 0.17667258
-      objectReference: {fileID: 0}
-    - target: {fileID: 5980759030916386001, guid: 4ad2a026ca5753b4e8eb0907d9889fc5, type: 3}
-      propertyPath: failureReleaseFX.ease.m_Curve.Array.data[3].value
       value: 0.9990452
       objectReference: {fileID: 0}
     - target: {fileID: 5980759030916386001, guid: 4ad2a026ca5753b4e8eb0907d9889fc5, type: 3}
-      propertyPath: failureReleaseFX.ease.m_Curve.Array.data[4].value
+      propertyPath: failureReleaseFX.ease.m_Curve.Array.data[2].value
       value: 0.9966397
+      objectReference: {fileID: 0}
+    - target: {fileID: 5980759030916386001, guid: 4ad2a026ca5753b4e8eb0907d9889fc5, type: 3}
+      propertyPath: failureReleaseFX.ease.m_Curve.Array.data[3].value
+      value: 0.9847946
+      objectReference: {fileID: 0}
+    - target: {fileID: 5980759030916386001, guid: 4ad2a026ca5753b4e8eb0907d9889fc5, type: 3}
+      propertyPath: failureReleaseFX.ease.m_Curve.Array.data[4].value
+      value: 0.9847946
       objectReference: {fileID: 0}
     - target: {fileID: 5980759030916386001, guid: 4ad2a026ca5753b4e8eb0907d9889fc5, type: 3}
       propertyPath: failureReleaseFX.ease.m_Curve.Array.data[5].value
@@ -2250,7 +2250,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5980759030916386001, guid: 4ad2a026ca5753b4e8eb0907d9889fc5, type: 3}
       propertyPath: failureReleaseFX.ease.m_Curve.Array.data[0].inSlope
-      value: 568.19635
+      value: 7.043751
       objectReference: {fileID: 0}
     - target: {fileID: 5980759030916386001, guid: 4ad2a026ca5753b4e8eb0907d9889fc5, type: 3}
       propertyPath: failureReleaseFX.ease.m_Curve.Array.data[1].inSlope
@@ -2258,15 +2258,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5980759030916386001, guid: 4ad2a026ca5753b4e8eb0907d9889fc5, type: 3}
       propertyPath: failureReleaseFX.ease.m_Curve.Array.data[2].inSlope
-      value: -0.22398035
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5980759030916386001, guid: 4ad2a026ca5753b4e8eb0907d9889fc5, type: 3}
       propertyPath: failureReleaseFX.ease.m_Curve.Array.data[3].inSlope
-      value: 0
+      value: -0.013980139
       objectReference: {fileID: 0}
     - target: {fileID: 5980759030916386001, guid: 4ad2a026ca5753b4e8eb0907d9889fc5, type: 3}
       propertyPath: failureReleaseFX.ease.m_Curve.Array.data[4].inSlope
-      value: 0
+      value: -0.013980139
       objectReference: {fileID: 0}
     - target: {fileID: 5980759030916386001, guid: 4ad2a026ca5753b4e8eb0907d9889fc5, type: 3}
       propertyPath: failureReleaseFX.ease.m_Curve.Array.data[5].inSlope
@@ -2290,7 +2290,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5980759030916386001, guid: 4ad2a026ca5753b4e8eb0907d9889fc5, type: 3}
       propertyPath: failureReleaseFX.ease.m_Curve.Array.data[0].outSlope
-      value: 568.19635
+      value: 7.043751
       objectReference: {fileID: 0}
     - target: {fileID: 5980759030916386001, guid: 4ad2a026ca5753b4e8eb0907d9889fc5, type: 3}
       propertyPath: failureReleaseFX.ease.m_Curve.Array.data[1].inWeight
@@ -2306,7 +2306,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5980759030916386001, guid: 4ad2a026ca5753b4e8eb0907d9889fc5, type: 3}
       propertyPath: failureReleaseFX.ease.m_Curve.Array.data[2].outSlope
-      value: -0.22398035
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5980759030916386001, guid: 4ad2a026ca5753b4e8eb0907d9889fc5, type: 3}
       propertyPath: failureReleaseFX.ease.m_Curve.Array.data[3].inWeight
@@ -2314,7 +2314,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5980759030916386001, guid: 4ad2a026ca5753b4e8eb0907d9889fc5, type: 3}
       propertyPath: failureReleaseFX.ease.m_Curve.Array.data[3].outSlope
-      value: 0
+      value: -0.013980139
       objectReference: {fileID: 0}
     - target: {fileID: 5980759030916386001, guid: 4ad2a026ca5753b4e8eb0907d9889fc5, type: 3}
       propertyPath: failureReleaseFX.ease.m_Curve.Array.data[4].inWeight
@@ -2322,7 +2322,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5980759030916386001, guid: 4ad2a026ca5753b4e8eb0907d9889fc5, type: 3}
       propertyPath: failureReleaseFX.ease.m_Curve.Array.data[4].outSlope
-      value: 0
+      value: -0.013980139
       objectReference: {fileID: 0}
     - target: {fileID: 5980759030916386001, guid: 4ad2a026ca5753b4e8eb0907d9889fc5, type: 3}
       propertyPath: failureReleaseFX.ease.m_Curve.Array.data[5].inWeight
@@ -2366,11 +2366,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5980759030916386001, guid: 4ad2a026ca5753b4e8eb0907d9889fc5, type: 3}
       propertyPath: failureReleaseFX.ease.m_Curve.Array.data[3].outWeight
-      value: 0.33333334
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5980759030916386001, guid: 4ad2a026ca5753b4e8eb0907d9889fc5, type: 3}
       propertyPath: failureReleaseFX.ease.m_Curve.Array.data[4].outWeight
-      value: 0.33333334
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5980759030916386001, guid: 4ad2a026ca5753b4e8eb0907d9889fc5, type: 3}
       propertyPath: successReleaseFX.ease.m_Curve.Array.data[0].outWeight
@@ -2394,11 +2394,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5980759030916386001, guid: 4ad2a026ca5753b4e8eb0907d9889fc5, type: 3}
       propertyPath: failureReleaseFX.ease.m_Curve.Array.data[3].tangentMode
-      value: 0
+      value: 34
       objectReference: {fileID: 0}
     - target: {fileID: 5980759030916386001, guid: 4ad2a026ca5753b4e8eb0907d9889fc5, type: 3}
       propertyPath: failureReleaseFX.ease.m_Curve.Array.data[4].tangentMode
-      value: 0
+      value: 34
       objectReference: {fileID: 0}
     - target: {fileID: 5980759030916386001, guid: 4ad2a026ca5753b4e8eb0907d9889fc5, type: 3}
       propertyPath: failureReleaseFX.ease.m_Curve.Array.data[5].tangentMode

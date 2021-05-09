@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Sound.BasicRandomizer;
+using UnityEngine.SceneManagement;
+
+
+
 
 public class Movement : MonoBehaviour
 {
@@ -26,6 +30,10 @@ public class Movement : MonoBehaviour
     [Header("Trigger")]
     public bool BlockPlayerOnTrigger = false;
 
+    [Header("Dialog audio source")]
+    public AudioSource dialogueAudioSource;
+    public GameObject subtitlesText;
+
     CharacterController characterController;
     Vector3 moveDirection = Vector3.zero;
     float rotationX = 0;
@@ -38,10 +46,20 @@ public class Movement : MonoBehaviour
     private Vector3 cameraStartPosition;
     private Vector3 cameraEndPosition;
     private float accumulatedDistance;
+    private Vector3 newDirection;
+    private bool lookTheSky = false;
+    private Vector3 targetDirection;
+    private Quaternion targetRotation;
+    private int countLookTheSky;
+
+
 
     void Start()
     {
         characterController = GetComponent<CharacterController>();
+
+        targetRotation = transform.rotation;
+
 
         // Lock cursor
         Cursor.lockState = CursorLockMode.Locked;
@@ -66,7 +84,7 @@ public class Movement : MonoBehaviour
 
         if (Input.GetButton("Jump") && canMove && characterController.isGrounded)
         {
-            moveDirection.y = jumpSpeed;
+            //moveDirection.y = jumpSpeed;
         }
         else
         {
@@ -106,7 +124,34 @@ public class Movement : MonoBehaviour
             transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * lookSpeed, 0);
         }
 
+
+        //newDirection =  Vector3.RotateTowards(transform.rotation.eulerAngles, transform.rotation.eulerAngles + new Vector3(0,111,0)   , transitionSpeed * Time.deltaTime);
+
         
+
+        //if (Input.GetKeyDown(KeyCode.Space))
+        //{
+        //    targetRotation *= Quaternion.AngleAxis(45, -Vector3.right);
+        //}
+        //transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, 10 * transitionSpeed * Time.deltaTime);
+
+
+
+        if (lookTheSky)
+        {
+
+            countLookTheSky++;
+
+            Debug.Log("Lookthesky " +  lookTheSky);
+
+            transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, 10 * transitionSpeed * Time.deltaTime);
+
+
+            //if (targetRotation -  transform.rotation)
+            if(countLookTheSky > 20)
+                lookTheSky = false;
+
+        }
 
     }
 
@@ -120,12 +165,47 @@ public class Movement : MonoBehaviour
 
         //inTrigger = true;
 
-        if(BlockPlayerOnTrigger)
-            canMove = false;
 
         
+        if(other.gameObject.name == "Spirit Test")
+        {
 
 
+            countLookTheSky = 0;
+
+            //targetDirection = transform.position - new Vector3(transform.position.x + 10, transform.position.y + 10, transform.position.z);
+
+            targetRotation *= Quaternion.AngleAxis(45, -Vector3.right);
+
+            lookTheSky = true;
+
+            dialogueAudioSource.Play();
+
+
+            //transform.Rotate(0, 111, 0);
+            //transform.Rotate(42.5f, 0, 0);
+
+            subtitlesText.SetActive(true);
+
+            Debug.Log("Collided");
+
+
+            other.gameObject.GetComponent<BoxCollider>().enabled = false;
+
+
+        }
+
+
+        if (BlockPlayerOnTrigger)
+            canMove = false;
+
+
+
+
+
+
+        
+        
 
         //playerCamera.transform.position = playerCamera.transform.position + new Vector3(-2.82f, 0.49f, -1.13f);
         //playerCamera.transform.position = new Vector3(0.67f, -0.72f, 0.14f);
@@ -133,7 +213,7 @@ public class Movement : MonoBehaviour
         //playerCamera.transform.Rotate(0, 45, 0);
 
 
-        Debug.Log("Collided");
+        
     }
 
     private void OnTriggerExit(Collider other)
