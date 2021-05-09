@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 248c8c31d6534662a5bd251071bb5989, type: 3}
   m_Name: test
   m_EditorClassIdentifier: 
-  music: {fileID: 8300000, guid: c538455f5f45711479c4565f13b0e282, type: 3}
+  music: {fileID: 0}
   bpm: 120
   channel0:
   - 5
@@ -27,3 +27,6 @@ MonoBehaviour:
   channel3:
   - 4
   - 7
+  successScore: 1
+  failScore: 1
+  targetScore: 0

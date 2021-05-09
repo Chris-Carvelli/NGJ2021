@@ -40,6 +40,7 @@ public class Movement : MonoBehaviour
     [Header("Rhythm")]
     public SO_Choreography choreography;
     public NoteVisuals[] Channels;
+    public NoteVisuals[] ChannelsSecond;
 
 
 
@@ -233,7 +234,7 @@ public class Movement : MonoBehaviour
             //transform.Rotate(42.5f, 0, 0);
 
 
-            //RhythmSystem.Instance.StartSong(choreography, Channels);
+            RhythmSystem.Instance.StartSong(choreography, Channels);
 
 
 
@@ -278,6 +279,9 @@ public class Movement : MonoBehaviour
             //transform.Rotate(0, 111, 0);
             //transform.Rotate(42.5f, 0, 0);
 
+            RhythmSystem.Instance.StartSong(choreography, ChannelsSecond);
+
+
 
             Debug.Log("Collided");
 
@@ -318,6 +322,8 @@ public class Movement : MonoBehaviour
 
             //transform.Rotate(0, 111, 0);
             //transform.Rotate(42.5f, 0, 0);
+
+            RhythmSystem.Instance.StartSong(choreography, ChannelsSecond);
 
 
             Debug.Log("Collided");

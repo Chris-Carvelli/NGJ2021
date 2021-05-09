@@ -4385,6 +4385,17 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 273187517}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &273187521 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5335344061476229923, guid: 93a23698ed0d1694db591aef5d9a4cce, type: 3}
+  m_PrefabInstance: {fileID: 2114152992}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 273187517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f94839653a464a968730d2b729e1165e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &276376151
 GameObject:
   m_ObjectHideFlags: 0
@@ -5535,6 +5546,17 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 354451999}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &354452003 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1798378265998831956, guid: 93a23698ed0d1694db591aef5d9a4cce, type: 3}
+  m_PrefabInstance: {fileID: 2114152992}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 354451999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f94839653a464a968730d2b729e1165e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &357188506 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: fd58faf9989a8b64b90cfd27236a8f7a, type: 3}
@@ -7006,6 +7028,17 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 439516047}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &439516051 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5335344060865982566, guid: 93a23698ed0d1694db591aef5d9a4cce, type: 3}
+  m_PrefabInstance: {fileID: 2114152992}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 439516047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f94839653a464a968730d2b729e1165e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &440358971
 GameObject:
   m_ObjectHideFlags: 0
@@ -11061,7 +11094,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2, y: 3, z: 2}
+  m_Size: {x: 4, y: 3, z: 4}
   m_Center: {x: 0, y: 1, z: 0}
 --- !u!4 &786175388 stripped
 Transform:
@@ -11420,7 +11453,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2, y: 3, z: 2}
+  m_Size: {x: 4, y: 3, z: 4}
   m_Center: {x: 0, y: 1, z: 0}
 --- !u!1001 &815898918
 PrefabInstance:
@@ -15503,6 +15536,10 @@ PrefabInstance:
       value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: ChannelsSecond.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
       propertyPath: SpiritThreeText.Array.size
       value: 19
       objectReference: {fileID: 0}
@@ -15677,6 +15714,22 @@ PrefabInstance:
       propertyPath: SpritTwoClips.Array.data[9]
       value: 
       objectReference: {fileID: 8300000, guid: 3d93c8b6a07f0434799962798fe5c316, type: 3}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: ChannelsSecond.Array.data[0]
+      value: 
+      objectReference: {fileID: 354452003}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: ChannelsSecond.Array.data[1]
+      value: 
+      objectReference: {fileID: 439516051}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: ChannelsSecond.Array.data[2]
+      value: 
+      objectReference: {fileID: 1190032498}
+    - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: ChannelsSecond.Array.data[3]
+      value: 
+      objectReference: {fileID: 273187521}
     - target: {fileID: 1460444393027852969, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
       propertyPath: SpiritOneText.Array.data[10]
       value: 'You better watch out for your belongings, \nor you might end up like
@@ -17759,6 +17812,17 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1190032494}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1190032498 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5335344059907970357, guid: 93a23698ed0d1694db591aef5d9a4cce, type: 3}
+  m_PrefabInstance: {fileID: 2114152992}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1190032494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f94839653a464a968730d2b729e1165e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1194784392
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21025,7 +21089,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2, y: 3, z: 2}
+  m_Size: {x: 4, y: 3, z: 4}
   m_Center: {x: 0, y: 1, z: 0}
 --- !u!4 &1433148738 stripped
 Transform:
