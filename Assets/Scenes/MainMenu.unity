@@ -242,6 +242,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1128285685}
     m_Modifications:
+    - target: {fileID: 7375374479585401072, guid: 8d34767cf02861343894880b83505a4e, type: 3}
+      propertyPath: fadeTarget
+      value: 0.7
+      objectReference: {fileID: 0}
     - target: {fileID: 7375374479585401073, guid: 8d34767cf02861343894880b83505a4e, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -290,6 +294,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7375374479585401078, guid: 8d34767cf02861343894880b83505a4e, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 81bdb91c569edbe4796256350372b09c, type: 3}
     - target: {fileID: 7375374479585401079, guid: 8d34767cf02861343894880b83505a4e, type: 3}
       propertyPath: m_Name
       value: MainMenuMusic
