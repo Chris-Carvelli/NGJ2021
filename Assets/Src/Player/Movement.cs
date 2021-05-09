@@ -14,7 +14,7 @@ public class Movement : MonoBehaviour
 
     [Header("Movement")]
     public float walkingSpeed = 7.5f;
-    public float runningSpeed = 11.5f;
+    public float runningSpeed = 7.5f;
     public float jumpSpeed = 8.0f;
     public float gravity = 20.0f;
 
@@ -96,7 +96,8 @@ public class Movement : MonoBehaviour
         Vector3 forward = transform.TransformDirection(Vector3.forward);
         Vector3 right = transform.TransformDirection(Vector3.right);
         // Press Left Shift to run
-        bool isRunning = Input.GetKey(KeyCode.LeftShift);
+        //bool isRunning = Input.GetKey(KeyCode.LeftShift);
+        bool isRunning = false;
         float curSpeedX = canMove ? (isRunning ? runningSpeed : walkingSpeed) * Input.GetAxis("Vertical") : 0;
         float curSpeedY = canMove ? (isRunning ? runningSpeed : walkingSpeed) * Input.GetAxis("Horizontal") : 0;
         float movementDirectionY = moveDirection.y;
