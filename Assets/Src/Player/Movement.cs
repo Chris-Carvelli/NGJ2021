@@ -125,6 +125,15 @@ public class Movement : MonoBehaviour
         characterController.Move(moveDirection * Time.deltaTime);
 
 
+        if (Input.GetKeyDown("escape"))
+        {
+
+            SceneManager.LoadScene(0);
+
+
+        }
+
+
         if(characterController.velocity.sqrMagnitude > 0)
         {
             accumulatedDistance += Time.deltaTime;
@@ -170,7 +179,7 @@ public class Movement : MonoBehaviour
 
 
             //if (targetRotation -  transform.rotation)
-            if(countLookTheSky > 120)
+            if(countLookTheSky > 200)
             {
                 lookTheSky = false;
 
