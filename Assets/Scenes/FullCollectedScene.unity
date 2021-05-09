@@ -15990,6 +15990,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6419241954718346937, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 3600185764037228633, guid: 60a2f899572e81f4cac12479b3f1cb82, type: 2}
     - target: {fileID: 6419241956123415175, guid: d4553002d3ba4b842b34107357fee2a2, type: 3}
       propertyPath: m_Color.rgba
       value: 4278190080
@@ -19509,7 +19513,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2199474817076617558, guid: 4081d409b9deebe46b948e144cc8ab31, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.48
+      value: -13.76
       objectReference: {fileID: 0}
     - target: {fileID: 2199474817076617558, guid: 4081d409b9deebe46b948e144cc8ab31, type: 3}
       propertyPath: m_LocalPosition.y
@@ -19517,7 +19521,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2199474817076617558, guid: 4081d409b9deebe46b948e144cc8ab31, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 18.61
+      value: 42.66
       objectReference: {fileID: 0}
     - target: {fileID: 2199474817076617558, guid: 4081d409b9deebe46b948e144cc8ab31, type: 3}
       propertyPath: m_LocalRotation.w
